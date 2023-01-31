@@ -1,0 +1,6 @@
+@use "mixins.scss" as m;
+@use "variables.scss" as v;
+
+* {
+    font-family: v.$inter;
+}
