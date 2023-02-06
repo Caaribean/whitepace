@@ -1,0 +1,32 @@
+//
+//BREAKPOINTS
+//
+@mixin xs {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin sm {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media (min-width: 72rem) {
+      @content;
+    }
+  }
+  
+//   @mixin lg {
+//     @media (min-width: 1440px) {
+//       @content;
+//     }
+//   }
+  
+//   @mixin xl {
+//     @media (min-width: 1920px) {
+//       @content;
+//     }
+//   }

@@ -1,6 +1,29 @@
 @use "mixins.scss" as m;
 @use "variables.scss" as v;
+@use "icons.scss";
+@use "grid.scss";
+@use "reset.scss";
 
 * {
     font-family: v.$inter;
+    font-size: 16px;
+}
+
+
+
+.page {
+    padding: 0 1rem;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+
+    .a {
+        background-color: pink;
+    }
+
+    .b {
+        background-color: aquamarine;
+    }
 }
