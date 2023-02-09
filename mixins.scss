@@ -1,32 +1,107 @@
+@use "variables.scss" as v;
+
 //
 //BREAKPOINTS
 //
 @mixin xs {
-    @media (max-width: 767px) {
-      @content;
-    }
+  @media (max-width: 767px) {
+    @content;
   }
-  
-  @mixin sm {
-    @media (min-width: 768px) {
-      @content;
-    }
+}
+
+@mixin sm {
+  @media (min-width: 768px) {
+    @content;
   }
-  
-  @mixin md {
-    @media (min-width: 72rem) {
-      @content;
-    }
+}
+
+@mixin md {
+  @media (min-width: 72rem) {
+    @content;
   }
-  
+}
+
 //   @mixin lg {
 //     @media (min-width: 1440px) {
 //       @content;
 //     }
 //   }
-  
+
 //   @mixin xl {
 //     @media (min-width: 1920px) {
 //       @content;
 //     }
 //   }
+
+//
+
+@mixin header {
+  background-color: v.$navyblue;
+}
+
+@mixin logotext {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.644px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+@mixin title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: v.$white;
+}
+
+@mixin title--light {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: v.$black;
+}
+
+@mixin text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: v.$white;
+}
+
+@mixin text--light {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: v.$black;
+}
+
+@mixin btn {
+  padding: 20px 40px;
+  background-color: v.$blue;
+  border-radius: 8px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: v.$white;
+}
+
+@mixin boximage {
+  background-color: v.$lightblue;
+  width: 286px;
+  height: 191px;
+}

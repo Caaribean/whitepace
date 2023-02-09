@@ -1,29 +1,63 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css" class="rel" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="style.css" class="rel" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <div class="page">
 
-<body>
-  <!--Sprawdzić działanie ikon-->
+      <header class="header">
+        <div class="col-3">
+          <div class="header__logo">
+            <img class="header__logo__img" src="./images/icon-logo.png" />
+            <span class="header__logo__text">whitepace</span>
+          </div>
+        </div>
+        <div class="col-1">
+          <img class="header__hamburger" src="./images/hamburger.png" />
+        </div>
+      </header>
 
-  <span class="icon-android icon-black"></span>
+      <div class="section--dark getmore col-4">
+        <h1 class="section--dark__title">Get More Done with whitepace</h1>
+        <span class="section--dark__text">Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks</span>
+        <button class="section--dark__btn">Try TasKey Free <span class="icon-arrow-right"></span> </button>
+        <div class="section--dark__boximage"><img></div>
+      </div>
+
+      <div class="section--light projectmanagement col-4">
+        <h1 class="section--light__title--light">Project Management</h1>
+        <span class="section--light__text--light">Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.</span>
+        <button class="section--light__btn">Get Started<span class="icon-arrow-right"></span> </button>
+        <div class="section--light__boximage"><img></div>
+      </div>
+
+      <div class="section--light worktogether col-4">
+        <h1 class="section--light__title--light">Work together</h1>
+        <span class="section--light__text--light">With whitepace, share your notes with your colleagues and collaborate on them.
+          You can also publish a note to the internet and share the URL with others.
+          </span>
+        <button class="section--light__btn">Try it now<span class="icon-arrow-right"></span> </button>
+        <img class="section--light__image" src="./images/apps.png">
+      </div>
+
+    </div>
+  </body>
+</html>
+
+<!-- 
+<span class="icon-android icon-black"></span>
   <span class="icon-android--white"></span>
-
-  <!--ustawić grid-->
 
   <div class="page">
     <div class="container">
       <div class="a col-1 col-sm-7 col-md-6"></div>
       <div class="b col-3 col-sm-1 col-md-6"></div>
     </div>
-  </div>
-
-
-
-</body>
-
-</html>
+  </div> -->

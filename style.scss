@@ -5,25 +5,110 @@
 @use "reset.scss";
 
 * {
-    font-family: v.$inter;
-    font-size: 16px;
+  font-family: v.$inter;
+  font-size: 16px;
 }
-
-
 
 .page {
-    padding: 0 1rem;
-}
+  padding: 0 1rem;
 
-.container {
-    height: 400px;
+  .header {
+    @include m.header;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+
+    &__logo {
+      &__text {
+        @include m.logotext;
+      }
+    }
+  }
+
+  .section--dark {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+      @include m.title;
+      margin-bottom: 1.5rem;
+    }
+
+    &__text {
+      @include m.text;
+      margin-bottom: 3.75rem;
+    }
+
+    &__btn {
+      @include m.btn;
+      margin-bottom: 6.25rem;
+    }
+
+    &__boximage {
+      @include m.boximage;
+      margin-bottom: 5rem;
+    }
+
+    &.getmore {
+      background-color: v.$navyblue;
+      background-image: url(./images/element.png);
+      background-position: 100%;
+    }
+  }
+
+  .section--light {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__title--light {
+      @include m.title--light;
+      margin-bottom: 1.5rem;
+    }
+
+    &__text--light {
+      @include m.text--light;
+      margin-bottom: 3.75rem;
+    }
+
+    &__btn {
+      @include m.btn;
+      margin-bottom: 6.25rem;
+    }
+
+    &__boximage {
+      @include m.boximage;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &.projectmanagement {
+      margin-top: 5rem;
+      background-image: url(./images/element2.png);
+      background-position: 100%;
+    }
+
+    &.worktogether {
+      margin-top: 6.25rem;
+      margin-bottom: 5rem;
+    }
+  }
+}
+/* .container {
+    height: 400px; 
     display: flex;
 
     .a {
         background-color: pink;
-    }
+    } 
 
     .b {
         background-color: aquamarine;
     }
-}
+} */
