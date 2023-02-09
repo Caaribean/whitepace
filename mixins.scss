@@ -105,3 +105,101 @@
   width: 286px;
   height: 191px;
 }
+
+@mixin board-blue {
+  background-color: v.$navyblue;
+  box-shadow: v.$boardshadow;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 289px;
+}
+
+@mixin board-white {
+  background-color: v.$white;
+  border: 1px solid v.$yellow;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 289px;
+}
+
+@mixin board-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: v.$whtite2;
+  margin-bottom: 25px;
+}
+
+@mixin board-title-white {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: v.$black;
+  margin-bottom: 25px;
+}
+
+@mixin board-price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: v.$yellow;
+  margin-bottom: 25px;
+}
+
+@mixin board-price-white {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: v.$black;
+  margin-bottom: 25px;
+}
+
+@mixin board-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: v.$whtite2;
+}
+
+@mixin board-text-white {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: v.$black;
+}
+
+@mixin board-btn {
+  padding: 16px 40px;
+  background: v.$blue;
+  border-radius: 8px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: v.$white;
+}
+
+@mixin board-btn-white {
+  padding: 16px 40px;
+  background: v.$white;
+  border-radius: 8px;
+  border: 1px solid v.$yellow;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: v.$black;
+}

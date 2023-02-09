@@ -49,13 +49,18 @@
 
     &__boximage {
       @include m.boximage;
-      margin-bottom: 5rem;
     }
 
     &.getmore {
       background-color: v.$navyblue;
       background-image: url(./images/element.png);
       background-position: 100%;
+      padding-bottom: 5rem;
+    }
+
+    &.useas {
+      background-color: v.$navyblue;
+      padding: 5rem 0;
     }
   }
 
@@ -82,6 +87,10 @@
 
     &__boximage {
       @include m.boximage;
+
+      &.m-3 {
+        margin-bottom: 3.75rem;
+      }
     }
 
     &__image {
@@ -97,6 +106,100 @@
     &.worktogether {
       margin-top: 6.25rem;
       margin-bottom: 5rem;
+    }
+
+    &.customise {
+      margin-top: 6.25rem;
+      margin-bottom: 11.25rem;
+    }
+  }
+
+  .boards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 85px;
+
+    &__board--white {
+      @include m.board-white;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      &__title {
+        @include m.board-title-white;
+      }
+
+      &__price {
+        @include m.board-price-white;
+      }
+
+      &__text {
+        @include m.board-text-white;
+        margin-bottom: 25px;
+      }
+
+      &__list {
+        &__item {
+          @include m.board-text-white;
+          margin-bottom: 25px;
+
+          &:last-child {
+            margin-bottom: 28px;
+          }
+
+          .icon-check-circle {
+            margin-right: 19px;
+            color: v.$black;
+          }
+        }
+      }
+
+      &__btn {
+        @include m.board-btn-white;
+      }
+    }
+
+    &__board--blue {
+      @include m.board-blue;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      &__title {
+        @include m.board-title;
+      }
+
+      &__price {
+        @include m.board-price;
+      }
+
+      &__text {
+        @include m.board-text;
+        margin-bottom: 25px;
+      }
+
+      &__list {
+        &__item {
+          @include m.board-text;
+          margin-bottom: 25px;
+
+          &:last-child {
+            margin-bottom: 28px;
+          }
+
+          .icon-check-circle {
+            margin-right: 19px;
+            color: v.$yellow;
+          }
+        }
+      }
+
+      &__btn {
+        @include m.board-btn;
+      }
     }
   }
 }
