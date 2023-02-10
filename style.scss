@@ -70,7 +70,7 @@
 
     &__image {
       width: 100%;
-      margin-bottom: 100px;
+      margin-bottom: 6.25rem;
     }
 
     &.getmore {
@@ -87,14 +87,14 @@
 
     &.yourwork {
       background-color: v.$navyblue;
-      padding-top: 100px;
-      padding-bottom: 40px;
+      padding-top: 6.25rem;
+      padding-bottom: 2.5rem;
     }
 
     &.workwith {
       background-color: v.$navyblue;
-      padding-top: 80px;
-      padding-bottom: 80px;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
     }
   }
 
@@ -155,18 +155,18 @@
     }
 
     &.yourdata {
-      margin-top: 80px;
-      margin-bottom: 160px;
+      margin-top: 5rem;
+      margin-bottom: 10rem;
     }
   }
 
   .boards {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
-    margin-bottom: 85px;
+    margin-bottom: 5.3125rem;
 
     &__board--white {
       @include m.board-white;
@@ -184,20 +184,20 @@
 
       &__text {
         @include m.board-text-white;
-        margin-bottom: 25px;
+        margin-bottom: 1.5625rem;
       }
 
       &__list {
         &__item {
           @include m.board-text-white;
-          margin-bottom: 25px;
+          margin-bottom: 1.5625rem;
 
           &:last-child {
-            margin-bottom: 28px;
+            margin-bottom: 1.75rem;
           }
 
           .icon-check-circle {
-            margin-right: 19px;
+            margin-right: 1.1875rem;
             color: v.$black;
           }
         }
@@ -224,20 +224,20 @@
 
       &__text {
         @include m.board-text;
-        margin-bottom: 25px;
+        margin-bottom: 1.5625rem;
       }
 
       &__list {
         &__item {
           @include m.board-text;
-          margin-bottom: 25px;
+          margin-bottom: 1.5625rem;
 
           &:last-child {
-            margin-bottom: 28px;
+            margin-bottom: 1.75rem;
           }
 
           .icon-check-circle {
-            margin-right: 19px;
+            margin-right: 1.1875rem;
             color: v.$yellow;
           }
         }
@@ -255,22 +255,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    margin-bottom: 80px;
+    gap: 6.25rem;
+    margin-bottom: 5rem;
 
     &__title {
       @include m.title--light;
     }
 
     &.icon-apple {
-      width: 55px;
-      height: 68px;
+      width: 3.4375rem;
+      height: 4.25rem;
     }
   }
 
   .opinions {
-    margin-top: 100px;
-    margin-bottom: 172px;
+    margin-top: 6.25rem;
+    margin-bottom: 10.75rem;
 
     &__title {
       @include m.title-opinions;
@@ -281,8 +281,8 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 20px;
-      margin-top: 60px;
+      gap: 1.25rem;
+      margin-top: 3.75rem;
 
       :nth-child(2),
       :nth-child(3) {
@@ -304,7 +304,7 @@
 
         &__avatar {
           width: max-content;
-          margin-bottom: 24px;
+          margin-bottom: 1.5rem;
         }
 
         &__name {
@@ -322,7 +322,7 @@
         &__caption--white {
           @include m.opinion-caption-white;
         }
-      }
+      } 
     } 
   }
 }

@@ -302,9 +302,9 @@ table {
 .page .header__logo__text {
   font-style: normal;
   font-weight: 700;
-  font-size: 19.644px;
-  line-height: 24px;
-  color: #ffffff;
+  font-size: 1.22rem;
+  line-height: 1.5rem;
+  color: #FFFFFF;
 }
 .page .section--dark {
   display: flex;
@@ -353,14 +353,14 @@ table {
   margin-bottom: 3.75rem;
 }
 .page .section--dark__btn {
-  padding: 20px 40px;
+  padding: 1.25rem 2.5rem;
   background-color: #4F9CF9;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
@@ -372,12 +372,12 @@ table {
 }
 .page .section--dark__boximage {
   background-color: #C4DEFD;
-  width: 286px;
-  height: 191px;
+  width: 17.875rem;
+  height: 11.9375rem;
 }
 .page .section--dark__image {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 .page .section--dark.getmore {
   background-color: #043873;
@@ -391,13 +391,13 @@ table {
 }
 .page .section--dark.yourwork {
   background-color: #043873;
-  padding-top: 100px;
-  padding-bottom: 40px;
+  padding-top: 6.25rem;
+  padding-bottom: 2.5rem;
 }
 .page .section--dark.workwith {
   background-color: #043873;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .page .section--light {
   display: flex;
@@ -426,14 +426,14 @@ table {
   margin-bottom: 3.75rem;
 }
 .page .section--light__btn {
-  padding: 20px 40px;
+  padding: 1.25rem 2.5rem;
   background-color: #4F9CF9;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
@@ -442,8 +442,8 @@ table {
 }
 .page .section--light__boximage {
   background-color: #C4DEFD;
-  width: 286px;
-  height: 191px;
+  width: 17.875rem;
+  height: 11.9375rem;
 }
 .page .section--light__boximage.m-3 {
   margin-bottom: 3.75rem;
@@ -468,23 +468,23 @@ table {
   margin-bottom: 11.25rem;
 }
 .page .section--light.yourdata {
-  margin-top: 80px;
-  margin-bottom: 160px;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 .page .boards {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
-  margin-bottom: 85px;
+  margin-bottom: 5.3125rem;
 }
 .page .boards__board--white {
   background-color: #FFFFFF;
-  border: 1px solid #FFE492;
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 289px;
+  border: 0.0625rem solid #FFE492;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  max-width: 18.0625rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -492,63 +492,63 @@ table {
 .page .boards__board--white__title {
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   color: #212529;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 .page .boards__board--white__price {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
   letter-spacing: -0.02em;
   color: #212529;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 .page .boards__board--white__text {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   letter-spacing: -0.02em;
   color: #212529;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 .page .boards__board--white__list__item {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   letter-spacing: -0.02em;
   color: #212529;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 .page .boards__board--white__list__item:last-child {
-  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
 }
 .page .boards__board--white__list__item .icon-check-circle {
-  margin-right: 19px;
+  margin-right: 1.1875rem;
   color: #212529;
 }
 .page .boards__board--white__btn {
-  padding: 16px 40px;
+  padding: 1rem 2.5rem;
   background: #FFFFFF;
-  border-radius: 8px;
-  border: 1px solid #FFE492;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #FFE492;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125rem;
+  line-height: 1.1875rem;
   letter-spacing: -0.02em;
   color: #212529;
 }
 .page .boards__board--blue {
   background-color: #043873;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 289px;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  max-width: 18.0625rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -556,54 +556,54 @@ table {
 .page .boards__board--blue__title {
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   color: #fefefe;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 .page .boards__board--blue__price {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
   letter-spacing: -0.02em;
   color: #FFE492;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 .page .boards__board--blue__text {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   letter-spacing: -0.02em;
   color: #fefefe;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 .page .boards__board--blue__list__item {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   letter-spacing: -0.02em;
   color: #fefefe;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 .page .boards__board--blue__list__item:last-child {
-  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
 }
 .page .boards__board--blue__list__item .icon-check-circle {
-  margin-right: 19px;
+  margin-right: 1.1875rem;
   color: #FFE492;
 }
 .page .boards__board--blue__btn {
-  padding: 16px 40px;
+  padding: 1rem 2.5rem;
   background: #4F9CF9;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125rem;
+  line-height: 1.1875rem;
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
@@ -613,8 +613,8 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  margin-bottom: 80px;
+  gap: 6.25rem;
+  margin-bottom: 5rem;
 }
 .page .sponsors__title {
   font-style: normal;
@@ -626,18 +626,18 @@ table {
   color: #212529;
 }
 .page .sponsors.icon-apple {
-  width: 55px;
-  height: 68px;
+  width: 3.4375rem;
+  height: 4.25rem;
 }
 .page .opinions {
-  margin-top: 100px;
-  margin-bottom: 172px;
+  margin-top: 6.25rem;
+  margin-bottom: 10.75rem;
 }
 .page .opinions__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
   text-align: center;
   color: #212529;
 }
@@ -646,8 +646,8 @@ table {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-top: 60px;
+  gap: 1.25rem;
+  margin-top: 3.75rem;
 }
 .page .opinions__box-opinions :nth-child(2).opinions__box-opinions__comment,
 .page .opinions__box-opinions :nth-child(3).opinions__box-opinions__comment {
@@ -657,72 +657,72 @@ table {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 20px;
+  padding: 1.25rem;
   background: #FFFFFF;
   box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  max-width: 288px;
+  border-radius: 0.625rem;
+  max-width: 18rem;
 }
 .page .opinions__box-opinions__comment__text {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   letter-spacing: -0.02em;
   color: #212529;
-  border-bottom: 1px solid #212529;
-  padding-bottom: 40px;
-  margin-top: 32px;
-  margin-bottom: 40px;
+  border-bottom: 0.0625rem solid #212529;
+  padding-bottom: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
 }
 .page .opinions__box-opinions__comment__text--white {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   letter-spacing: -0.02em;
   color: #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
-  padding-bottom: 40px;
-  margin-top: 32px;
-  margin-bottom: 40px;
+  border-bottom: 0.0625rem solid #FFFFFF;
+  padding-bottom: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
 }
 .page .opinions__box-opinions__comment__avatar {
   width: -moz-max-content;
   width: max-content;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 .page .opinions__box-opinions__comment__name {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   letter-spacing: -0.02em;
   color: #212529;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 .page .opinions__box-opinions__comment__name--blue {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   letter-spacing: -0.02em;
   color: #043873;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 .page .opinions__box-opinions__comment__caption {
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   letter-spacing: -0.02em;
   color: #212529;
 }
 .page .opinions__box-opinions__comment__caption--white {
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
