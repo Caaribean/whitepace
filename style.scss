@@ -37,18 +37,40 @@
       margin-bottom: 1.5rem;
     }
 
+    &__title--left {
+      @include m.title-left;
+      margin-bottom: 1.5rem;
+    }
+
     &__text {
       @include m.text;
       margin-bottom: 3.75rem;
     }
 
+    &__text--left {
+      @include m.text-left;
+      margin-bottom: 3.75rem;
+    }
+
     &__btn {
       @include m.btn;
-      margin-bottom: 6.25rem;
+
+      &.mb-3 {
+        margin-bottom: 3.75rem;
+      }
+
+      &.mb-6 {
+        margin-bottom: 6.25rem;
+      }
     }
 
     &__boximage {
       @include m.boximage;
+    }
+
+    &__image {
+      width: 100%;
+      margin-bottom: 100px;
     }
 
     &.getmore {
@@ -61,6 +83,18 @@
     &.useas {
       background-color: v.$navyblue;
       padding: 5rem 0;
+    }
+
+    &.yourwork {
+      background-color: v.$navyblue;
+      padding-top: 100px;
+      padding-bottom: 40px;
+    }
+
+    &.workwith {
+      background-color: v.$navyblue;
+      padding-top: 80px;
+      padding-bottom: 80px;
     }
   }
 
@@ -82,7 +116,10 @@
 
     &__btn {
       @include m.btn;
-      margin-bottom: 6.25rem;
+
+      &.mb-3 {
+        margin-bottom: 3.75rem;
+      }
     }
 
     &__boximage {
@@ -95,6 +132,10 @@
 
     &__image {
       width: 100%;
+
+      &.m-6 {
+        margin-bottom: 6.25rem;
+      }
     }
 
     &.projectmanagement {
@@ -111,6 +152,11 @@
     &.customise {
       margin-top: 6.25rem;
       margin-bottom: 11.25rem;
+    }
+
+    &.yourdata {
+      margin-top: 80px;
+      margin-bottom: 160px;
     }
   }
 
@@ -202,16 +248,63 @@
       }
     }
   }
-}
-/* .container {
-    height: 400px; 
+
+  .sponsors {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 80px;
 
-    .a {
-        background-color: pink;
-    } 
-
-    .b {
-        background-color: aquamarine;
+    &__title {
+      @include m.title--light;
     }
-} */
+
+    &.icon-apple {
+      width: 55px;
+      height: 68px;
+    }
+  }
+
+  .opinions {
+    margin-top: 100px;
+    margin-bottom: 172px;
+
+    &__title {
+      @include m.title-opinions;
+    }
+
+    &__box-opinions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 60px;
+  
+      &__comment {
+        @include m.comment;
+
+        &__text {
+          @include m.text-opinion;
+          margin-top: 32px;
+          margin-bottom: 40px;
+        }
+
+        &__avatar {
+          width: max-content;
+          margin-bottom: 24px;
+        }
+
+        &__name {
+          @include m.opinion-name;
+          margin-bottom: 15px;
+        }
+
+        &__caption {
+          @include m.opinion-caption; 
+        }
+      }
+    }
+  }
+}

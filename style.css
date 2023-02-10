@@ -322,12 +322,32 @@ table {
   color: #FFFFFF;
   margin-bottom: 1.5rem;
 }
+.page .section--dark__title--left {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  text-align: left;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
 .page .section--dark__text {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.875rem;
   text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin-bottom: 3.75rem;
+}
+.page .section--dark__text--left {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-align: left;
   letter-spacing: -0.02em;
   color: #FFFFFF;
   margin-bottom: 3.75rem;
@@ -343,12 +363,21 @@ table {
   line-height: 30px;
   letter-spacing: -0.02em;
   color: #FFFFFF;
+}
+.page .section--dark__btn.mb-3 {
+  margin-bottom: 3.75rem;
+}
+.page .section--dark__btn.mb-6 {
   margin-bottom: 6.25rem;
 }
 .page .section--dark__boximage {
   background-color: #C4DEFD;
   width: 286px;
   height: 191px;
+}
+.page .section--dark__image {
+  width: 100%;
+  margin-bottom: 100px;
 }
 .page .section--dark.getmore {
   background-color: #043873;
@@ -359,6 +388,16 @@ table {
 .page .section--dark.useas {
   background-color: #043873;
   padding: 5rem 0;
+}
+.page .section--dark.yourwork {
+  background-color: #043873;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.page .section--dark.workwith {
+  background-color: #043873;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .page .section--light {
   display: flex;
@@ -397,7 +436,9 @@ table {
   line-height: 30px;
   letter-spacing: -0.02em;
   color: #FFFFFF;
-  margin-bottom: 6.25rem;
+}
+.page .section--light__btn.mb-3 {
+  margin-bottom: 3.75rem;
 }
 .page .section--light__boximage {
   background-color: #C4DEFD;
@@ -409,6 +450,9 @@ table {
 }
 .page .section--light__image {
   width: 100%;
+}
+.page .section--light__image.m-6 {
+  margin-bottom: 6.25rem;
 }
 .page .section--light.projectmanagement {
   margin-top: 5rem;
@@ -422,6 +466,10 @@ table {
 .page .section--light.customise {
   margin-top: 6.25rem;
   margin-bottom: 11.25rem;
+}
+.page .section--light.yourdata {
+  margin-top: 80px;
+  margin-bottom: 160px;
 }
 .page .boards {
   display: flex;
@@ -559,16 +607,86 @@ table {
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
-
-/* .container {
-    height: 400px; 
-    display: flex;
-
-    .a {
-        background-color: pink;
-    } 
-
-    .b {
-        background-color: aquamarine;
-    }
-} *//*# sourceMappingURL=style.css.map */
+.page .sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 80px;
+}
+.page .sponsors__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #212529;
+}
+.page .sponsors.icon-apple {
+  width: 55px;
+  height: 68px;
+}
+.page .opinions {
+  margin-top: 100px;
+  margin-bottom: 172px;
+}
+.page .opinions__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #212529;
+}
+.page .opinions__box-opinions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 60px;
+}
+.page .opinions__box-opinions__comment {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.page .opinions__box-opinions__comment__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #212529;
+  border-bottom: 1px solid #212529;
+  padding-bottom: 40px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+.page .opinions__box-opinions__comment__avatar {
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 24px;
+}
+.page .opinions__box-opinions__comment__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #212529;
+  margin-bottom: 15px;
+}
+.page .opinions__box-opinions__comment__caption {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #212529;
+}/*# sourceMappingURL=style.css.map */

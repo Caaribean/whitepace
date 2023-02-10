@@ -57,6 +57,16 @@
   color: v.$white;
 }
 
+@mixin title-left {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  text-align: left;
+  letter-spacing: -0.02em;
+  color: v.$white;
+}
+
 @mixin title--light {
   font-style: normal;
   font-weight: 700;
@@ -73,6 +83,16 @@
   font-size: 1.125rem;
   line-height: 1.875rem;
   text-align: center;
+  letter-spacing: -0.02em;
+  color: v.$white;
+}
+
+@mixin text-left {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-align: left;
   letter-spacing: -0.02em;
   color: v.$white;
 }
@@ -196,6 +216,54 @@
   background: v.$white;
   border-radius: 8px;
   border: 1px solid v.$yellow;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: v.$black;
+}
+
+@mixin title-opinions {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: v.$black;
+}
+
+@mixin comment {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+  background: v.$white;
+  box-shadow: v.$commentshadow;
+  border-radius: 10px;
+}
+
+@mixin text-opinion {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: v.$black;
+  border-bottom: 1px solid v.$black;
+  padding-bottom: 40px;
+}
+
+@mixin opinion-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: v.$black;
+}
+
+@mixin opinion-caption {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
