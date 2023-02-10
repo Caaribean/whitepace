@@ -241,6 +241,7 @@
   background: v.$white;
   box-shadow: v.$commentshadow;
   border-radius: 10px;
+  max-width: 288px;
 }
 
 @mixin text-opinion {
@@ -252,6 +253,21 @@
   color: v.$black;
   border-bottom: 1px solid v.$black;
   padding-bottom: 40px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+@mixin text-opinion-white {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: v.$white;
+  border-bottom: 1px solid v.$white;
+  padding-bottom: 40px;
+  margin-top: 32px;
+  margin-bottom: 40px;
 }
 
 @mixin opinion-name {
@@ -261,6 +277,17 @@
   line-height: 22px;
   letter-spacing: -0.02em;
   color: v.$black;
+  margin-bottom: 15px;
+}
+
+@mixin opinion-name-blue {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: v.$navyblue;
+  margin-bottom: 15px;
 }
 
 @mixin opinion-caption {
@@ -270,4 +297,13 @@
   line-height: 30px;
   letter-spacing: -0.02em;
   color: v.$black;
+}
+
+@mixin opinion-caption-white {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: v.$white;
 }

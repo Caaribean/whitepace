@@ -279,16 +279,27 @@
     &__box-opinions {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       gap: 20px;
       margin-top: 60px;
-  
+
+      :nth-child(2),
+      :nth-child(3) {
+        &.opinions__box-opinions__comment {
+          background: v.$blue;
+        }
+      }
+
       &__comment {
         @include m.comment;
 
         &__text {
           @include m.text-opinion;
-          margin-top: 32px;
-          margin-bottom: 40px;
+        }
+
+        &__text--white {
+          @include m.text-opinion-white;
         }
 
         &__avatar {
@@ -298,13 +309,20 @@
 
         &__name {
           @include m.opinion-name;
-          margin-bottom: 15px;
+        }
+
+        &__name--blue {
+          @include m.opinion-name-blue;
         }
 
         &__caption {
-          @include m.opinion-caption; 
+          @include m.opinion-caption;
+        }
+
+        &__caption--white {
+          @include m.opinion-caption-white;
         }
       }
-    }
+    } 
   }
 }
