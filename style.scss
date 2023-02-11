@@ -322,7 +322,125 @@
         &__caption--white {
           @include m.opinion-caption-white;
         }
-      } 
-    } 
+      }
+    }
+  }
+
+  .footer {
+    background-color: v.$navyblue;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &__title {
+      @include m.footer-title;
+      margin-bottom: 24px;
+    }
+
+    &__text {
+      @include m.footer-text;
+    }
+
+    &__btn {
+      @include m.footer-btn;
+    }
+
+    &__icons {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 140px;
+    }
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+
+      &__img {
+        width: max-content;
+        margin-right: 10px;
+      }
+
+      &__text {
+        @include m.footer-logo;
+      }
+    }
+
+    &__text-logo {
+      @include m.footer-text-logo;
+      margin-bottom: 80px;
+    }
+
+    &__navfooter {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__text {
+        @include m.navfooter-text;
+      }
+
+      &__text--bold {
+        @include m.navfooter-text--bold;
+      }
+
+      &__text--yellow {
+        @include m.navfooter-text--yellow;
+      }
+    }
+
+    &__smalltitle {
+      @include m.footer-smalltitle;
+      margin-bottom: 23px;
+    }
+
+    &__smalltext {
+      @include m.footer-smalltext;
+      margin-bottom: 23px;
+    }
+
+    &__socialmedia {
+      margin-bottom: 32px;
+    }
+
+    &__information {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 80px;
+      align-items: center;
+      justify-content: center;
+
+      &__text {
+        @include m.footer-info-text;
+        margin-bottom: 20px;
+
+        &.copyright {
+          border-bottom: 1px solid #2e4e73;
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    .mb-2 {
+      margin-bottom: 2.5rem;
+    }
+
+    .mb-5 {
+      margin-bottom: 5rem;
+    }
+
+    .mb-1 {
+      margin-bottom: 0.9375rem;
+    }
+
+    .center {
+      max-width: 196px;
+      margin: 0 auto;
+    }
   }
 }
