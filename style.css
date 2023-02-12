@@ -25,9 +25,27 @@
   color: #1a3453;
 }
 
+.icon-android--white:before {
+  content: "\e900";
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
 .icon-apple:before {
   content: "\e901";
   color: #1a3453;
+}
+
+.icon-apple--white:before {
+  content: "\e901";
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.icon-apple--sponsors:before {
+  content: "\e901";
+  color: #000000;
+  font-size: 4rem;
 }
 
 .icon-arrow-down:before {
@@ -42,6 +60,12 @@
   content: "\e904";
 }
 
+.icon-check-circle--yellow:before {
+  content: "\e904";
+  color: #FFE492;
+  margin-right: 1.1875rem;
+}
+
 .icon-earth:before {
   content: "\e905";
   color: #1a3453;
@@ -52,9 +76,21 @@
   color: #1a3453;
 }
 
+.icon-facebook--white:before {
+  content: "\e906";
+  color: #F7F7EE;
+  font-size: 1rem;
+}
+
 .icon-linkedin:before {
   content: "\e907";
   color: #1a3453;
+}
+
+.icon-linkedin--white:before {
+  content: "\e907";
+  color: #F7F7EE;
+  font-size: 1rem;
 }
 
 .icon-quote:before {
@@ -62,14 +98,38 @@
   color: #1a3453;
 }
 
+.icon-quote--navyblue:before {
+  content: "\e908";
+  color: #043873;
+  font-size: 3rem;
+}
+
+.icon-quote--white:before {
+  content: "\e908";
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+
 .icon-twitter:before {
   content: "\e909";
   color: #1a3453;
 }
 
+.icon-twitter--white:before {
+  content: "\e909";
+  color: #F7F7EE;
+  font-size: 1rem;
+}
+
 .icon-windows:before {
   content: "\e90a";
   color: #1a3453;
+}
+
+.icon-windows--white:before {
+  content: "\e90a";
+  color: #FFFFFF;
+  font-size: 2rem;
 }
 
 @media (max-width: 767px) {
@@ -382,6 +442,7 @@ table {
 .page .section--dark.getmore {
   background-color: #043873;
   background-image: url(./images/element.png);
+  background-repeat: no-repeat;
   background-position: 100%;
   padding-bottom: 5rem;
 }
@@ -396,6 +457,9 @@ table {
 }
 .page .section--dark.workwith {
   background-color: #043873;
+  background-image: url(./images/element.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -456,7 +520,8 @@ table {
 }
 .page .section--light.projectmanagement {
   margin-top: 5rem;
-  background-image: url(./images/element2.png);
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
   background-position: 100%;
 }
 .page .section--light.worktogether {
@@ -591,10 +656,6 @@ table {
 .page .boards__board--blue__list__item:last-child {
   margin-bottom: 1.75rem;
 }
-.page .boards__board--blue__list__item .icon-check-circle {
-  margin-right: 1.1875rem;
-  color: #FFE492;
-}
 .page .boards__board--blue__btn {
   padding: 1rem 2.5rem;
   background: #4F9CF9;
@@ -624,10 +685,6 @@ table {
   text-align: center;
   letter-spacing: -0.02em;
   color: #212529;
-}
-.page .sponsors.icon-apple {
-  width: 3.4375rem;
-  height: 4.25rem;
 }
 .page .opinions {
   margin-top: 6.25rem;
@@ -763,7 +820,7 @@ table {
 }
 .page .footer__icons {
   display: flex;
-  gap: 1.25rem;
+  gap: 2.5rem;
   margin-bottom: 8.75rem;
 }
 .page .footer__logo {
@@ -873,6 +930,10 @@ table {
 .page .footer__information__text.copyright {
   border-bottom: 0.0625rem solid #2e4e73;
   padding-bottom: 1.25rem;
+}
+.page .footer__socialmedia {
+  display: flex;
+  gap: 2rem;
 }
 .page .footer .mb-2 {
   margin-bottom: 2.5rem;

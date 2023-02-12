@@ -25,9 +25,27 @@
   color: #1a3453;
 }
 
+.icon-android--white:before {
+  content: "\e900";
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
 .icon-apple:before {
   content: "\e901";
   color: #1a3453;
+}
+
+.icon-apple--white:before {
+  content: "\e901";
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.icon-apple--sponsors:before {
+  content: "\e901";
+  color: #000000;
+  font-size: 4rem;
 }
 
 .icon-arrow-down:before {
@@ -42,6 +60,12 @@
   content: "\e904";
 }
 
+.icon-check-circle--yellow:before {
+  content: "\e904";
+  color: #FFE492;
+  margin-right: 1.1875rem;
+}
+
 .icon-earth:before {
   content: "\e905";
   color: #1a3453;
@@ -52,9 +76,21 @@
   color: #1a3453;
 }
 
+.icon-facebook--white:before {
+  content: "\e906";
+  color: #F7F7EE;
+  font-size: 1rem;
+}
+
 .icon-linkedin:before {
   content: "\e907";
   color: #1a3453;
+}
+
+.icon-linkedin--white:before {
+  content: "\e907";
+  color: #F7F7EE;
+  font-size: 1rem;
 }
 
 .icon-quote:before {
@@ -62,12 +98,36 @@
   color: #1a3453;
 }
 
+.icon-quote--navyblue:before {
+  content: "\e908";
+  color: #043873;
+  font-size: 3rem;
+}
+
+.icon-quote--white:before {
+  content: "\e908";
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+
 .icon-twitter:before {
   content: "\e909";
   color: #1a3453;
 }
 
+.icon-twitter--white:before {
+  content: "\e909";
+  color: #F7F7EE;
+  font-size: 1rem;
+}
+
 .icon-windows:before {
   content: "\e90a";
   color: #1a3453;
+}
+
+.icon-windows--white:before {
+  content: "\e90a";
+  color: #FFFFFF;
+  font-size: 2rem;
 }/*# sourceMappingURL=icons.css.map */

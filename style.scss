@@ -76,6 +76,7 @@
     &.getmore {
       background-color: v.$navyblue;
       background-image: url(./images/element.png);
+      background-repeat: no-repeat;
       background-position: 100%;
       padding-bottom: 5rem;
     }
@@ -93,6 +94,9 @@
 
     &.workwith {
       background-color: v.$navyblue;
+      background-image: url(./images/element.png);
+      background-repeat: no-repeat;
+      background-position: 100%;
       padding-top: 5rem;
       padding-bottom: 5rem;
     }
@@ -140,7 +144,8 @@
 
     &.projectmanagement {
       margin-top: 5rem;
-      background-image: url(./images/element2.png);
+      background-image: url(./images/background.png);
+      background-repeat: no-repeat;
       background-position: 100%;
     }
 
@@ -226,20 +231,15 @@
         @include m.board-text;
         margin-bottom: 1.5625rem;
       }
-
+ 
       &__list {
-        &__item {
+        &__item { 
           @include m.board-text;
           margin-bottom: 1.5625rem;
 
           &:last-child {
             margin-bottom: 1.75rem;
-          }
-
-          .icon-check-circle {
-            margin-right: 1.1875rem;
-            color: v.$yellow;
-          }
+          } 
         }
       }
 
@@ -260,11 +260,6 @@
 
     &__title {
       @include m.title--light;
-    }
-
-    &.icon-apple {
-      width: 3.4375rem;
-      height: 4.25rem;
     }
   }
 
@@ -348,7 +343,7 @@
 
     &__icons {
       display: flex;
-      gap: 1.25rem;
+      gap: 2.5rem;
       margin-bottom: 8.75rem;
     }
 
@@ -362,7 +357,7 @@
         width: max-content;
         margin-right: 0.625rem;
       }
-
+ 
       &__text {
         @include m.footer-logo;
       }
@@ -422,17 +417,22 @@
         &.copyright {
           border-bottom: 0.0625rem solid v.$darkblue;
           padding-bottom: 1.25rem;
-        }
-      }
+        } 
+      }  
+    } 
+    
+    &__socialmedia {
+      display: flex;
+      gap: 2rem;
     }
 
-    .mb-2 {
-      margin-bottom: 2.5rem;
+    .mb-2 { 
+      margin-bottom: 2.5rem; 
     }
 
     .mb-5 {
       margin-bottom: 5rem;
-    }
+    }  
 
     .mb-1 {
       margin-bottom: 0.9375rem;
