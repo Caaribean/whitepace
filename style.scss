@@ -5,25 +5,417 @@
 @use "reset.scss";
 
 * {
-    font-family: v.$inter;
-    font-size: 16px;
+  font-family: v.$inter;
+  font-size: 16px;
 }
-
-
 
 .page {
-    padding: 0 1rem;
-}
+  padding: 0 1rem;
 
-.container {
-    height: 400px;
+  .header {
+    @include m.header;
+
+    &__logo {
+      &__img {
+        width: 1.5625rem;
+        height: 1.25rem;
+      }
+      &__text {
+        @include m.logotext;
+      }
+    }
+
+    &__hamburger {
+      max-height: 1.5rem;
+    }
+  }
+
+  .section--dark {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-    .a {
-        background-color: pink;
+    &__title {
+      @include m.title;
     }
 
-    .b {
-        background-color: aquamarine;
+    &__title--left {
+      @include m.title-left;
     }
+
+    &__text {
+      @include m.text;
+    }
+
+    &__text--left {
+      @include m.text-left;
+    }
+
+    &__btn {
+      @include m.btn;
+
+      &.mb-3 {
+        margin-bottom: 3.75rem;
+      }
+
+      &.mb-6 {
+        margin-bottom: 6.25rem;
+      }
+    }
+
+    &__boximage {
+      @include m.boximage;
+    }
+
+    &__image {
+      width: 100%;
+      margin-bottom: 6.25rem;
+    }
+
+    &.getmore {
+      background-color: v.$navyblue;
+      background-image: url(./images/element.png);
+      background-repeat: no-repeat;
+      background-position: 100%;
+      padding-bottom: 5rem;
+    }
+
+    &.useas {
+      background-color: v.$navyblue;
+      padding: 5rem 0;
+    }
+
+    &.yourwork {
+      background-color: v.$navyblue;
+      padding-top: 6.25rem;
+      padding-bottom: 2.5rem;
+    }
+
+    &.workwith {
+      background-color: v.$navyblue;
+      background-image: url(./images/element.png);
+      background-repeat: no-repeat;
+      background-position: 100%;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  .section--light {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__title--light {
+      @include m.title--light;
+    }
+
+    &__text--light {
+      @include m.text--light;
+    }
+
+    &__text--montserrat {
+      @include m.text--montserrat;
+    }
+
+    &__btn {
+      @include m.btn;
+
+      &.mb-3 {
+        margin-bottom: 3.75rem;
+      }
+    }
+
+    &__boximage {
+      @include m.boximage;
+
+      &.m-3 {
+        margin-bottom: 3.75rem;
+      }
+    }
+
+    &__image {
+      width: 100%;
+
+      &.m-6 {
+        margin-bottom: 6.25rem;
+      }
+    }
+
+    &.projectmanagement {
+      margin-top: 5rem;
+      background-image: url(./images/background.png);
+      background-repeat: no-repeat;
+      background-position-x: left;
+      background-size: 50%;
+    }
+
+    &.worktogether {
+      margin-top: 6.25rem;
+      margin-bottom: 5rem;
+    }
+
+    &.customise {
+      margin-top: 6.25rem;
+      margin-bottom: 11.25rem;
+    }
+
+    &.yourdata {
+      margin-top: 5rem;
+      margin-bottom: 10rem;
+    }
+  }
+
+  .boards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5.3125rem;
+
+    &__board--white {
+      @include m.board-white;
+
+      &__title {
+        @include m.board-title-white;
+      }
+
+      &__price {
+        @include m.board-price-white;
+      }
+
+      &__text {
+        @include m.board-text-white;
+      }
+
+      &__list {
+        &__item {
+          @include m.board-text-white;
+
+          &:last-child {
+            margin-bottom: 1.75rem;
+          }
+
+          .icon-check-circle {
+            margin-right: 1.1875rem;
+            color: v.$black;
+          }
+        }
+      }
+
+      &__btn {
+        @include m.board-btn-white;
+      }
+    }
+
+    &__board--blue {
+      @include m.board-blue;
+
+      &__title {
+        @include m.board-title;
+      }
+
+      &__price {
+        @include m.board-price;
+      }
+
+      &__text {
+        @include m.board-text;
+      }
+
+      &__list {
+        &__item {
+          @include m.board-text;
+
+          &:last-child {
+            margin-bottom: 1.75rem;
+          }
+        }
+      }
+
+      &__btn {
+        @include m.board-btn;
+      }
+    }
+  }
+
+  .sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25rem;
+    margin-bottom: 5rem;
+
+    &__title {
+      @include m.title--light;
+    }
+  }
+
+  .opinions {
+    margin-top: 6.25rem;
+    margin-bottom: 10.75rem;
+
+    &__title {
+      @include m.title-opinions;
+    }
+
+    &__box-opinions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1.25rem;
+      margin-top: 3.75rem;
+
+      :nth-child(2),
+      :nth-child(3) {
+        &.opinions__box-opinions__comment {
+          background: v.$blue;
+        }
+      }
+
+      &__comment {
+        @include m.comment;
+
+        &__text {
+          @include m.text-opinion;
+        }
+
+        &__text--white {
+          @include m.text-opinion-white;
+        }
+
+        &__avatar {
+          width: max-content;
+          margin-bottom: 1.5rem;
+        }
+
+        &__name {
+          @include m.opinion-name;
+        }
+
+        &__name--blue {
+          @include m.opinion-name-blue;
+        }
+
+        &__caption {
+          @include m.opinion-caption;
+        }
+
+        &__caption--white {
+          @include m.opinion-caption-white;
+        }
+      }
+    }
+  }
+
+  .footer {
+    @include m.footer; 
+
+    &__title {
+      @include m.footer-title;
+    }
+
+    &__text {
+      @include m.footer-text;
+    }
+
+    &__btn {
+      @include m.footer-btn;
+    }
+
+    &__icons {
+      display: flex;
+      gap: 2.5rem;
+      margin-bottom: 8.75rem;
+    }
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+
+      &__img {
+        width: max-content;
+        margin-right: 0.625rem;
+      }
+
+      &__text {
+        @include m.footer-logo;
+      }
+    }
+
+    &__text-logo {
+      @include m.footer-text-logo;
+    }
+
+    &__navfooter { 
+      @include m.navfooter;
+
+      &__text {
+        @include m.navfooter-text;
+      }
+
+      &__text--bold {
+        @include m.navfooter-text--bold;
+      }
+
+      &__text--yellow {
+        @include m.navfooter-text--yellow;
+      }
+    }
+
+    &__smalltitle {
+      @include m.footer-smalltitle;
+    }
+
+    &__smalltext {
+      @include m.footer-smalltext;
+    }
+
+    &__socialmedia {
+      margin-bottom: 2rem;
+    }
+
+    &__information {
+      @include m.footer-information;
+
+      &__text {
+        @include m.footer-info-text;
+
+        &.copyright {
+          border-bottom: 0.0625rem solid v.$darkblue;
+          padding-bottom: 1.25rem;
+        } 
+      }
+    }
+
+    &__socialmedia {
+      display: flex;  
+      gap: 2rem;
+    }
+
+    .mb-2 {
+      margin-bottom: 2.5rem;
+    }
+
+    .mb-5 {
+      margin-bottom: 5rem;
+    }
+
+    .mb-1 {
+      margin-bottom: 0.9375rem;
+    }
+
+    .center {
+      max-width: 12.25rem;
+      margin: 0 auto;
+    }
+  }
 }

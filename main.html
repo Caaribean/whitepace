@@ -1,29 +1,296 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css" class="rel" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  </head>
 
-<head>
-  <link rel="stylesheet" href="style.css" class="rel" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <div class="page">
+      <header class="header">
+          <div class="header__logo col-3">
+            <img class="header__logo__img" src="./images/icon-logo.png" />
+            <span class="header__logo__text">whitepace</span>
+          </div>
+          <img class="header__hamburger" src="./images/hamburger.png" />
+      </header>
 
-<body>
-  <!--Sprawdzić działanie ikon-->
+      <div class="section--dark getmore col-4">
+        <h2 class="section--dark__title">Get More Done with whitepace</h2>
+        <span class="section--dark__text"
+          >Project management software that enables your teams to collaborate,
+          plan, analyze and manage everyday tasks</span
+        >
+        <button class="section--dark__btn mb-6">
+          Try TasKey Free <span class="icon-arrow-right"></span>
+        </button>
+        <div class="section--dark__boximage"><img /></div>
+      </div>
 
-  <span class="icon-android icon-black"></span>
+      <div class="section--light projectmanagement col-4">
+        <h2 class="section--light__title--light">Project Management</h2>
+        <span class="section--light__text--light"
+          >Images, videos, PDFs and audio files are supported. Create math
+          expressions and diagrams directly from the app. Take photos with the
+          mobile app and save them to a note.</span
+        >
+        <button class="section--light__btn mb-3">
+          Get Started<span class="icon-arrow-right"></span>
+        </button>
+        <div class="section--light__boximage"><img /></div>
+      </div>
+
+      <div class="section--light worktogether col-4">
+        <h2 class="section--light__title--light">Work together</h2>
+        <span class="section--light__text--light"
+          >With whitepace, share your notes with your colleagues and collaborate
+          on them. You can also publish a note to the internet and share the URL
+          with others.
+        </span>
+        <button class="section--light__btn mb-3">
+          Try it now<span class="icon-arrow-right"></span>
+        </button> 
+        <img class="section--light__image" src="./images/work-together.png" />
+      </div>
+
+      <div class="section--dark useas col-4">
+        <h2 class="section--dark__title">Use as Extension</h2>
+        <span class="section--dark__text"
+          >Customise the app with plugins, custom themes and multiple text
+          editors (Rich Text or Markdown). Or create your own scripts and
+          plugins using the Extension API.</span
+        >
+        <button class="section--dark__btn mb-3">
+          Let’s Go<span class="icon-arrow-right"></span>
+        </button> 
+        <div class="section--dark__boximage"><img /></div>
+      </div>
+
+      <div class="section--light customise col-4">
+        <div class="section--light__boximage m-3"><img /></div>
+        <h2 class="section--light__title--light">Customise it to your needs</h2>
+        <span class="section--light__text--montserrat" 
+          >Customise the app with plugins, custom themes and multiple text
+          editors (Rich Text or Markdown). Or create your own scripts and
+          plugins using the Extension API.
+        </span>
+        <button class="section--light__btn">
+          Let’s Go<span class="icon-arrow-right"></span>
+        </button>
+      </div>
+
+      <div class="section--light col-4">
+        <h2 class="section--light__title--light">Choose Your Plan</h2>
+        <span class="section--light__text--light"
+          >Whether you want to get organized, keep your personal life on track,
+          or boost workplace productivity, Evernote has the right plan for you.
+        </span>
+      </div>
+
+      <div class="boards">
+
+        <div class="boards__board--white col-4">
+          <span class="boards__board--white__title">Free</span>
+          <span class="boards__board--white__price">$0</span>
+          <span class="boards__board--white__text">Capture ideas and find them quickly</span>
+          <ul class="boards__board--white__list">
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>Sync unlimited devices</li> 
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>10 GB monthly uploads
+            </li>
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>200 MB max. note size
+            </li>
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>Customize Home dashboard and access extra widgets</li>
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>Connect primary Google Calendar account
+            </li>
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>Add due dates, reminders, and notifications to your tasks
+            </li>
+          </ul>
+          <button class="boards__board--white__btn col-3">Get Started</button>
+        </div>
+
+        <div class="boards__board--blue col-4">
+          <span class="boards__board--blue__title">Personal</span>
+          <span class="boards__board--blue__price">$11.2</span>
+          <span class="boards__board--blue__text">Keep home and family on track</span>
+          <ul class="boards__board--blue__list">
+            <li class="boards__board--blue__list__item"><span class="icon-check-circle--yellow"></span>Sync unlimited devices</li> 
+            <li class="boards__board--blue__list__item"><span class="icon-check-circle--yellow"></span>10 GB monthly uploads
+            </li>
+            <li class="boards__board--blue__list__item"><span class="icon-check-circle--yellow"></span>200 MB max. note size
+            </li>
+            <li class="boards__board--blue__list__item"><span class="icon-check-circle--yellow"></span>Customize Home dashboard and access extra widgets</li>
+            <li class="boards__board--blue__list__item"><span class="icon-check-circle--yellow"></span>Connect primary Google Calendar account
+            </li>
+            <li class="boards__board--blue__list__item"><span class="icon-check-circle--yellow"></span>Add due dates, reminders, and notifications to your tasks
+            </li>
+          </ul>
+          <button class="boards__board--blue__btn col-3">Get Started</button>
+        </div>
+
+        <div class="boards__board--white col-4">
+          <span class="boards__board--white__title">Organization</span>
+          <span class="boards__board--white__price">$49.99</span>
+          <span class="boards__board--white__text">Capture ideas and find them quickly</span>
+          <ul class="boards__board--white__list">
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>Sync unlimited devices</li> 
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>10 GB monthly uploads
+            </li>
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>200 MB max. note size
+            </li>
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>Customize Home dashboard and access extra widgets</li>
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>Connect primary Google Calendar account
+            </li>
+            <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>Add due dates, reminders, and notifications to your tasks
+            </li>
+          </ul>
+          <button class="boards__board--white__btn col-3">Get Started</button>
+        </div>
+
+      </div>
+
+      <div class="section--dark yourwork col-4">
+        <h2 class="section--dark__title--left">Your work, everywhere you are</h2>
+        <span class="section--dark__text--left"
+          >Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</span
+        >
+        <button class="section--dark__btn">
+          Try Taskey<span class="icon-arrow-right"></span>
+        </button>
+      </div>
+
+      <div class="section--light yourdata col-4">
+        <img class="section--light__image m-6" src="./images/elipse.png" />
+        <h2 class="section--light__title--light">100% your data</h2>
+        <span class="section--light__text--light"
+          >The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
+        </span>
+        <button class="section--light__btn">
+          Read more<span class="icon-arrow-right"></span>
+        </button>
+      </div>
+ 
+      <div class="sponsors">
+        <h2 class="sponsors__title">Our sponsors</h2>
+        <span class="icon-apple--sponsors"></span>
+        <img src="./images/microsoft.png">
+        <img src="./images/slack.png">
+        <img src="./images/google.png">
+      </div> 
+
+      <div class="section--dark workwith col-4">
+        <img class="section--dark__image" src="./images/apps.png" />
+        <h2 class="section--dark__title">Work with Your Favorite Apps Using whitepace</h2>
+        <span class="section--dark__text"
+          >Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
+        </span>
+        <button class="section--dark__btn">
+          Read more<span class="icon-arrow-right"></span>
+        </button>
+      </div>
+
+      <div class="opinions col-4">
+        <h2 class="opinions__title">What Our Clients Says</h2>
+        <div class="opinions__box-opinions">
+
+          <div class="opinions__box-opinions__comment">
+            <span class="icon-quote--navyblue"></span>
+            <span class="opinions__box-opinions__comment__text">Taskkey is designed as a collaboration tool for businesses that is a full project management solution.</span>
+            <img class="opinions__box-opinions__comment__avatar" src="./images/avatar-woman.png">
+            <span class="opinions__box-opinions__comment__name">Oberon Shaw, MCH</span> 
+            <span class="opinions__box-opinions__comment__caption">Head of Talent Acquisition, North America</span>
+          </div>
+
+          <div class="opinions__box-opinions__comment">
+            <span class="icon-quote--white"></span>
+            <span class="opinions__box-opinions__comment__text--white">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</span>
+            <img class="opinions__box-opinions__comment__avatar" src="./images/avatar-man1.png">
+            <span class="opinions__box-opinions__comment__name--blue">Oberon Shaw, MCH</span>
+            <span class="opinions__box-opinions__comment__caption--white">Head of Talent Acquisition, North America</span>
+          </div>
+
+          <div class="opinions__box-opinions__comment">
+            <span class="icon-quote--white"></span>
+            <span class="opinions__box-opinions__comment__text--white">Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</span>
+            <img class="opinions__box-opinions__comment__avatar" src="./images/avatar-man2.png">
+            <span class="opinions__box-opinions__comment__name--blue">Oberon Shaw, MCH</span>
+            <span class="opinions__box-opinions__comment__caption--white">Head of Talent Acquisition, North America</span>
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="footer col-4">
+        <h2 class="footer__title">Try Whitepace today</h2>
+        <span class="footer__text mb-2">Get started for free.
+          Add your whole team as your needs grow.</span>
+        <button
+        class="footer__btn mb-2 col-3">Try Taskey free<span class="icon-arrow-right"></button>
+        <span class="footer__text mb-2">On a big team? Contact sales</span>
+        <div class="footer__icons col-3">
+          <span class="icon-apple--white"></span>
+          <span class="icon-windows--white"></span>
+          <span class="icon-android--white"></span>
+        </div>  
+      <div class="footer__logo">
+        <img class="footer__logo__img" src="./images/icon-logo.png" />
+        <span class="footer__logo__text">whitepace</span>
+      </div>
+        <span class="footer__text-logo">whitepace was created for the new ways we live and work. 
+          We make beautyfully designed around the world</span>
+        <div class="footer__navfooter mb-5">
+          <a class="footer__navfooter__text--bold mb-1">Product</a>
+          <a class="footer__navfooter__text--yellow mb-1">Overview</a>
+          <a class="footer__navfooter__text mb-1">Pricing</a>
+          <a class="footer__navfooter__text">Customer stories</a>
+        </div>
+        <div class="footer__navfooter mb-5">
+          <a class="footer__navfooter__text--bold mb-1">Resources</a>
+          <a class="footer__navfooter__text mb-1">Blog</a>
+          <a class="footer__navfooter__text mb-1">Guides & tutorials</a>
+          <a class="footer__navfooter__text">Help center</a>
+        </div>
+        <div class="footer__navfooter mb-5">
+          <a class="footer__navfooter__text--bold mb-1">Company</a>
+          <a class="footer__navfooter__text mb-1">About us</a>
+          <a class="footer__navfooter__text mb-1">Careers</a>
+          <a class="footer__navfooter__text">Media kit</a>
+        </div>
+        <span class="footer__smalltitle">Try It Today</span>
+        <span class="footer__smalltext">Get started for free.
+          Add your whole team as your needs grow.</span>
+        <button class="footer__btn center mb-5">Start today<span class="icon-arrow-right"></span></button>
+        <div>
+          <div class="footer__information">
+            <span class="footer__information__text"><span class="icon-earth--white"></span>English<span class="icon-arrow-down--white"></span></span>
+          <a class="footer__information__text">Terms & privacy</a>
+          <a class="footer__information__text">Security</a> 
+          <a class="footer__information__text">Status</a> 
+          <span class="footer__information__text copyright">©2021 Whitepace LLC.</span>
+          <div class="footer__socialmedia">
+            <span class="icon-facebook--white"></span> 
+            <span class="icon-twitter--white"></span>
+            <span class="icon-linkedin--white"></span>
+          </div>
+        </div>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
+
+<!-- 
+<span class="icon-android icon-black"></span>
   <span class="icon-android--white"></span>
-
-  <!--ustawić grid-->
 
   <div class="page">
     <div class="container">
       <div class="a col-1 col-sm-7 col-md-6"></div>
       <div class="b col-3 col-sm-1 col-md-6"></div>
     </div>
-  </div>
-
-
-
-</body>
-
-</html>
+  </div> -->
