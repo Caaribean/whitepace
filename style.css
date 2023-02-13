@@ -22,7 +22,6 @@
 
 .icon-android:before {
   content: "\e900";
-  color: #1a3453;
 }
 
 .icon-android--white:before {
@@ -33,7 +32,6 @@
 
 .icon-apple:before {
   content: "\e901";
-  color: #1a3453;
 }
 
 .icon-apple--white:before {
@@ -44,12 +42,19 @@
 
 .icon-apple--sponsors:before {
   content: "\e901";
-  color: #000000;
+  color: #212529;
   font-size: 4rem;
 }
 
 .icon-arrow-down:before {
   content: "\e902";
+}
+
+.icon-arrow-down--white:before {
+  content: "\e902";
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin-left: 0.375rem;
 }
 
 .icon-arrow-right:before {
@@ -68,34 +73,37 @@
 
 .icon-earth:before {
   content: "\e905";
-  color: #1a3453;
+}
+
+.icon-earth--white:before {
+  content: "\e905";
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin-right: 0.375rem;
 }
 
 .icon-facebook:before {
   content: "\e906";
-  color: #1a3453;
 }
 
 .icon-facebook--white:before {
   content: "\e906";
-  color: #F7F7EE;
+  color: #f7f7ee;
   font-size: 1rem;
 }
 
 .icon-linkedin:before {
   content: "\e907";
-  color: #1a3453;
 }
 
 .icon-linkedin--white:before {
   content: "\e907";
-  color: #F7F7EE;
+  color: #f7f7ee;
   font-size: 1rem;
 }
 
 .icon-quote:before {
   content: "\e908";
-  color: #1a3453;
 }
 
 .icon-quote--navyblue:before {
@@ -112,18 +120,16 @@
 
 .icon-twitter:before {
   content: "\e909";
-  color: #1a3453;
 }
 
 .icon-twitter--white:before {
   content: "\e909";
-  color: #F7F7EE;
+  color: #f7f7ee;
   font-size: 1rem;
 }
 
 .icon-windows:before {
   content: "\e90a";
-  color: #1a3453;
 }
 
 .icon-windows--white:before {
@@ -359,12 +365,19 @@ table {
   justify-content: space-between;
   padding-bottom: 5rem;
 }
+.page .header__logo__img {
+  width: 1.5625rem;
+  height: 1.25rem;
+}
 .page .header__logo__text {
   font-style: normal;
   font-weight: 700;
   font-size: 1.22rem;
   line-height: 1.5rem;
   color: #FFFFFF;
+}
+.page .header__hamburger {
+  max-height: 1.5rem;
 }
 .page .section--dark {
   display: flex;
@@ -379,8 +392,9 @@ table {
   line-height: 2.75rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  max-width: 18rem;
   margin-bottom: 1.5rem;
+  color: #FFFFFF;
 }
 .page .section--dark__title--left {
   font-style: normal;
@@ -389,8 +403,8 @@ table {
   line-height: 2.75rem;
   text-align: left;
   letter-spacing: -0.02em;
+  max-width: 18rem;
   color: #FFFFFF;
-  margin-bottom: 1.5rem;
 }
 .page .section--dark__text {
   font-style: normal;
@@ -399,8 +413,9 @@ table {
   line-height: 1.875rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  max-width: 18rem;
   margin-bottom: 3.75rem;
+  color: #FFFFFF;
 }
 .page .section--dark__text--left {
   font-style: normal;
@@ -409,8 +424,9 @@ table {
   line-height: 1.875rem;
   text-align: left;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  max-width: 18rem;
   margin-bottom: 3.75rem;
+  color: #FFFFFF;
 }
 .page .section--dark__btn {
   padding: 1.25rem 2.5rem;
@@ -476,8 +492,9 @@ table {
   line-height: 2.75rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #212529;
+  max-width: 18rem;
   margin-bottom: 1.5rem;
+  color: #212529;
 }
 .page .section--light__text--light {
   font-style: normal;
@@ -486,8 +503,19 @@ table {
   line-height: 1.875rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #212529;
+  max-width: 18rem;
   margin-bottom: 3.75rem;
+  color: #212529;
+}
+.page .section--light__text--montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  text-align: center;
+  margin-bottom: 3.75rem;
+  color: #212529;
 }
 .page .section--light__btn {
   padding: 1.25rem 2.5rem;
@@ -522,7 +550,8 @@ table {
   margin-top: 5rem;
   background-image: url(./images/background.png);
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position-x: left;
+  background-size: 50%;
 }
 .page .section--light.worktogether {
   margin-top: 6.25rem;
@@ -545,14 +574,14 @@ table {
   margin-bottom: 5.3125rem;
 }
 .page .boards__board--white {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   background-color: #FFFFFF;
   border: 0.0625rem solid #FFE492;
   border-radius: 0.625rem;
   padding: 1.25rem;
   max-width: 18.0625rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 .page .boards__board--white__title {
   font-style: normal;
@@ -577,8 +606,8 @@ table {
   font-size: 1rem;
   line-height: 1.25rem;
   letter-spacing: -0.02em;
-  color: #212529;
   margin-bottom: 1.5625rem;
+  color: #212529;
 }
 .page .boards__board--white__list__item {
   font-style: normal;
@@ -586,8 +615,8 @@ table {
   font-size: 1rem;
   line-height: 1.25rem;
   letter-spacing: -0.02em;
-  color: #212529;
   margin-bottom: 1.5625rem;
+  color: #212529;
 }
 .page .boards__board--white__list__item:last-child {
   margin-bottom: 1.75rem;
@@ -609,14 +638,14 @@ table {
   color: #212529;
 }
 .page .boards__board--blue {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   background-color: #043873;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
   border-radius: 0.625rem;
   padding: 1.25rem;
   max-width: 18.0625rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 .page .boards__board--blue__title {
   font-style: normal;
@@ -641,8 +670,8 @@ table {
   font-size: 1rem;
   line-height: 1.25rem;
   letter-spacing: -0.02em;
-  color: #fefefe;
   margin-bottom: 1.5625rem;
+  color: #fefefe;
 }
 .page .boards__board--blue__list__item {
   font-style: normal;
@@ -650,8 +679,8 @@ table {
   font-size: 1rem;
   line-height: 1.25rem;
   letter-spacing: -0.02em;
-  color: #fefefe;
   margin-bottom: 1.5625rem;
+  color: #fefefe;
 }
 .page .boards__board--blue__list__item:last-child {
   margin-bottom: 1.75rem;
@@ -684,6 +713,8 @@ table {
   line-height: 2.75rem;
   text-align: center;
   letter-spacing: -0.02em;
+  max-width: 18rem;
+  margin-bottom: 1.5rem;
   color: #212529;
 }
 .page .opinions {
@@ -795,8 +826,8 @@ table {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #FFFFFF;
   margin-bottom: 1.5rem;
+  color: #FFFFFF;
 }
 .page .footer__text {
   font-style: normal;
@@ -848,8 +879,9 @@ table {
   line-height: 1.875rem;
   text-align: center;
   letter-spacing: -0.02em;
+  max-width: 18rem;
+  margin: 0 auto 5rem;
   color: #f7f7ee;
-  margin-bottom: 80px;
 }
 .page .footer__navfooter {
   display: flex;
@@ -892,8 +924,8 @@ table {
   line-height: 2.25rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
   margin-bottom: 1.4375rem;
+  color: #FFFFFF;
 }
 .page .footer__smalltext {
   font-style: normal;
@@ -924,8 +956,8 @@ table {
   font-size: 1rem;
   line-height: 1.25rem;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
   margin-bottom: 1.25rem;
+  color: #FFFFFF;
 }
 .page .footer__information__text.copyright {
   border-bottom: 0.0625rem solid #2e4e73;

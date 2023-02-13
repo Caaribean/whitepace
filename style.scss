@@ -14,15 +14,19 @@
 
   .header {
     @include m.header;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5rem;
 
     &__logo {
+      &__img {
+        width: 1.5625rem;
+        height: 1.25rem;
+      }
       &__text {
         @include m.logotext;
       }
+    }
+
+    &__hamburger {
+      max-height: 1.5rem;
     }
   }
 
@@ -34,22 +38,18 @@
 
     &__title {
       @include m.title;
-      margin-bottom: 1.5rem;
     }
 
     &__title--left {
       @include m.title-left;
-      margin-bottom: 1.5rem;
     }
 
     &__text {
       @include m.text;
-      margin-bottom: 3.75rem;
     }
 
     &__text--left {
       @include m.text-left;
-      margin-bottom: 3.75rem;
     }
 
     &__btn {
@@ -110,12 +110,14 @@
 
     &__title--light {
       @include m.title--light;
-      margin-bottom: 1.5rem;
     }
 
     &__text--light {
       @include m.text--light;
-      margin-bottom: 3.75rem;
+    }
+
+    &__text--montserrat {
+      @include m.text--montserrat;
     }
 
     &__btn {
@@ -146,7 +148,8 @@
       margin-top: 5rem;
       background-image: url(./images/background.png);
       background-repeat: no-repeat;
-      background-position: 100%;
+      background-position-x: left;
+      background-size: 50%;
     }
 
     &.worktogether {
@@ -175,9 +178,6 @@
 
     &__board--white {
       @include m.board-white;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
 
       &__title {
         @include m.board-title-white;
@@ -189,13 +189,11 @@
 
       &__text {
         @include m.board-text-white;
-        margin-bottom: 1.5625rem;
       }
 
       &__list {
         &__item {
           @include m.board-text-white;
-          margin-bottom: 1.5625rem;
 
           &:last-child {
             margin-bottom: 1.75rem;
@@ -215,9 +213,6 @@
 
     &__board--blue {
       @include m.board-blue;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
 
       &__title {
         @include m.board-title;
@@ -229,17 +224,15 @@
 
       &__text {
         @include m.board-text;
-        margin-bottom: 1.5625rem;
       }
- 
+
       &__list {
-        &__item { 
+        &__item {
           @include m.board-text;
-          margin-bottom: 1.5625rem;
 
           &:last-child {
             margin-bottom: 1.75rem;
-          } 
+          }
         }
       }
 
@@ -322,15 +315,10 @@
   }
 
   .footer {
-    background-color: v.$navyblue;
-    padding-top: 6.25rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    @include m.footer; 
 
     &__title {
       @include m.footer-title;
-      margin-bottom: 1.5rem;
     }
 
     &__text {
@@ -357,7 +345,7 @@
         width: max-content;
         margin-right: 0.625rem;
       }
- 
+
       &__text {
         @include m.footer-logo;
       }
@@ -365,15 +353,10 @@
 
     &__text-logo {
       @include m.footer-text-logo;
-      margin-bottom: 80px;
     }
 
-    &__navfooter {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    &__navfooter { 
+      @include m.navfooter;
 
       &__text {
         @include m.navfooter-text;
@@ -390,12 +373,10 @@
 
     &__smalltitle {
       @include m.footer-smalltitle;
-      margin-bottom: 1.4375rem;
     }
 
     &__smalltext {
       @include m.footer-smalltext;
-      margin-bottom: 1.4375rem;
     }
 
     &__socialmedia {
@@ -403,36 +384,30 @@
     }
 
     &__information {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      margin-top: 5rem;
-      align-items: center;
-      justify-content: center;
+      @include m.footer-information;
 
       &__text {
         @include m.footer-info-text;
-        margin-bottom: 1.25rem;
 
         &.copyright {
           border-bottom: 0.0625rem solid v.$darkblue;
           padding-bottom: 1.25rem;
         } 
-      }  
-    } 
-    
+      }
+    }
+
     &__socialmedia {
-      display: flex;
+      display: flex;  
       gap: 2rem;
     }
 
-    .mb-2 { 
-      margin-bottom: 2.5rem; 
+    .mb-2 {
+      margin-bottom: 2.5rem;
     }
 
     .mb-5 {
       margin-bottom: 5rem;
-    }  
+    }
 
     .mb-1 {
       margin-bottom: 0.9375rem;
