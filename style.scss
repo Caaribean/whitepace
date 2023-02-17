@@ -108,17 +108,19 @@
         padding: 100px 0;
       }
     }
-  
+
     &.yourwork {
       background-color: v.$navyblue;
       padding-top: 6.25rem;
       padding-bottom: 2.5rem;
       display: flex;
       justify-content: start;
-      align-items: start; 
+      align-items: start;
 
       @include m.sm {
         padding: 140px 0;
+        background-image: url(./images/background2.png);
+        background-repeat: no-repeat;
       }
     }
 
@@ -127,8 +129,11 @@
       background-image: url(./images/element.png);
       background-repeat: no-repeat;
       background-position: 100%;
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+      padding: 5rem 0;
+
+      @include m.sm {
+        padding: 140px 0;
+      }
     }
   }
 
@@ -139,7 +144,7 @@
     align-items: center;
     flex-direction: column;
 
-    &__title--light {  
+    &__title--light {
       @include m.title--light;
     }
 
@@ -148,8 +153,8 @@
     }
 
     &__text--choose {
-      @include m.text--choose; 
-    } 
+      @include m.text--choose;
+    }
 
     &__text--montserrat {
       @include m.text--montserrat;
@@ -317,6 +322,10 @@
     gap: 6.25rem;
     margin-bottom: 5rem;
 
+    @include m.sm {
+      margin-bottom: 140px;
+    }
+
     &__title {
       @include m.title--light;
     }
@@ -325,6 +334,10 @@
   .opinions {
     margin-top: 6.25rem;
     margin-bottom: 10.75rem;
+
+    @include m.sm {
+      margin-top: 140px;
+    }
 
     &__title {
       @include m.title-opinions;
@@ -407,9 +420,20 @@
       align-items: center;
       margin-bottom: 1.5rem;
 
+      @include m.sm {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+      }
+
       &__img {
         width: max-content;
         margin-right: 0.625rem;
+
+        @include m.sm {
+          width: 68px;
+          height: 53px;
+        }
       }
 
       &__text {
@@ -452,27 +476,39 @@
     &__information {
       @include m.footer-information;
 
+      border-bottom: 0.0625rem solid v.$darkblue;
+      padding-bottom: 1.25rem;
+
       &__text {
         @include m.footer-info-text;
-
-        &.copyright {
-          border-bottom: 0.0625rem solid v.$darkblue;
-          padding-bottom: 1.25rem;
-        }
       }
     }
 
     &__socialmedia {
       display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 2rem;
+      margin-top: 1.25rem;
+
+      @include m.sm { 
+        display: flex;
+        justify-content: start;
+        align-items: start; 
+        margin-top: 0;
+      }
     }
 
     .mb-2 {
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.5rem; 
     }
 
-    .mb-5 {
+    .mb-nav {
       margin-bottom: 5rem;
+
+      @include m.sm {
+        margin-bottom: 100px; 
+      }
     }
 
     .mb-1 {
@@ -482,6 +518,10 @@
     .center {
       max-width: 12.25rem;
       margin: 0 auto;
+
+      @include m.sm {
+        margin: 0;
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
 @use "variables.scss" as v;
+@use "mixins.scss" as m;
 
 @font-face {
     font-family: 'icomoon';
@@ -32,6 +33,10 @@
     content: "\e900";
     color: v.$white;
     font-size: 2rem;
+
+    @include m.sm {
+        font-size: 4rem;
+    }
 }
 
 .icon-apple:before {
@@ -42,6 +47,10 @@
     content: "\e901";
     color: v.$white;
     font-size: 2rem;
+
+    @include m.sm {
+        font-size: 4rem;
+    }
 }
 
 .icon-apple--sponsors:before {
@@ -140,4 +149,8 @@
     content: "\e90a";
     color: v.$white;
     font-size: 2rem;
+
+    @include m.sm {
+        font-size: 4rem;
+    }
 }

@@ -29,6 +29,11 @@
   color: #FFFFFF;
   font-size: 2rem;
 }
+@media (min-width: 768px) {
+  .icon-android--white:before {
+    font-size: 4rem;
+  }
+}
 
 .icon-apple:before {
   content: "\e901";
@@ -38,6 +43,11 @@
   content: "\e901";
   color: #FFFFFF;
   font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .icon-apple--white:before {
+    font-size: 4rem;
+  }
 }
 
 .icon-apple--sponsors:before {
@@ -136,4 +146,9 @@
   content: "\e90a";
   color: #FFFFFF;
   font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .icon-windows--white:before {
+    font-size: 4rem;
+  }
 }/*# sourceMappingURL=icons.css.map */
