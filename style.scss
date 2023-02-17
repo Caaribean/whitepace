@@ -12,6 +12,10 @@
 .page {
   padding: 0 1rem;
 
+  @include m.sm {
+    padding: 0 32px;
+  }
+
   .header {
     @include m.header;
 
@@ -19,6 +23,11 @@
       &__img {
         width: 1.5625rem;
         height: 1.25rem;
+
+        @include m.sm {
+          width: 37px;
+          height: 29px;
+        }
       }
       &__text {
         @include m.logotext;
@@ -35,6 +44,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     &__title {
       @include m.title;
@@ -70,7 +80,12 @@
 
     &__image {
       width: 100%;
+      max-width: 279px;
       margin-bottom: 6.25rem;
+
+      @include m.sm {
+        max-width: 454px;
+      }
     }
 
     &.getmore {
@@ -79,17 +94,34 @@
       background-repeat: no-repeat;
       background-position: 100%;
       padding-bottom: 5rem;
+
+      @include m.sm {
+        padding-bottom: 100px;
+      }
     }
 
     &.useas {
       background-color: v.$navyblue;
       padding: 5rem 0;
+
+      @include m.sm {
+        padding: 100px 0;
+      }
     }
 
     &.yourwork {
       background-color: v.$navyblue;
       padding-top: 6.25rem;
       padding-bottom: 2.5rem;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+
+      @include m.sm {
+        padding: 140px 0;
+        background-image: url(./images/background2.png);
+        background-repeat: no-repeat;
+      }
     }
 
     &.workwith {
@@ -97,8 +129,11 @@
       background-image: url(./images/element.png);
       background-repeat: no-repeat;
       background-position: 100%;
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+      padding: 5rem 0;
+
+      @include m.sm {
+        padding: 140px 0;
+      }
     }
   }
 
@@ -107,6 +142,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     &__title--light {
       @include m.title--light;
@@ -114,6 +150,10 @@
 
     &__text--light {
       @include m.text--light;
+    }
+
+    &__text--choose {
+      @include m.text--choose;
     }
 
     &__text--montserrat {
@@ -138,6 +178,11 @@
 
     &__image {
       width: 100%;
+      max-width: 279px;
+
+      @include m.sm {
+        max-width: 454px;
+      }
 
       &.m-6 {
         margin-bottom: 6.25rem;
@@ -150,21 +195,47 @@
       background-repeat: no-repeat;
       background-position-x: left;
       background-size: 50%;
+
+      @include m.sm {
+        margin-top: 100px;
+      }
     }
 
     &.worktogether {
       margin-top: 6.25rem;
       margin-bottom: 5rem;
+
+      @include m.sm {
+        margin-bottom: 100px;
+      }
     }
 
     &.customise {
       margin-top: 6.25rem;
       margin-bottom: 11.25rem;
+
+      @include m.sm {
+        margin-top: 140px;
+        margin-bottom: 280px;
+      }
     }
 
     &.yourdata {
       margin-top: 5rem;
       margin-bottom: 10rem;
+
+      @include m.sm {
+        margin-top: 140px;
+        margin-bottom: 280px;
+      }
+    }
+
+    &.chooseplan {
+      margin-bottom: 85px;
+
+      @include m.sm {
+        margin-bottom: 60px;
+      }
     }
   }
 
@@ -251,6 +322,10 @@
     gap: 6.25rem;
     margin-bottom: 5rem;
 
+    @include m.sm {
+      margin-bottom: 140px;
+    }
+
     &__title {
       @include m.title--light;
     }
@@ -259,6 +334,10 @@
   .opinions {
     margin-top: 6.25rem;
     margin-bottom: 10.75rem;
+
+    @include m.sm {
+      margin-top: 140px;
+    }
 
     &__title {
       @include m.title-opinions;
@@ -315,7 +394,7 @@
   }
 
   .footer {
-    @include m.footer; 
+    @include m.footer;
 
     &__title {
       @include m.footer-title;
@@ -341,9 +420,20 @@
       align-items: center;
       margin-bottom: 1.5rem;
 
+      @include m.sm {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+      }
+
       &__img {
         width: max-content;
         margin-right: 0.625rem;
+
+        @include m.sm {
+          width: 68px;
+          height: 53px;
+        }
       }
 
       &__text {
@@ -355,7 +445,7 @@
       @include m.footer-text-logo;
     }
 
-    &__navfooter { 
+    &__navfooter {
       @include m.navfooter;
 
       &__text {
@@ -386,27 +476,39 @@
     &__information {
       @include m.footer-information;
 
+      border-bottom: 0.0625rem solid v.$darkblue;
+      padding-bottom: 1.25rem;
+
       &__text {
         @include m.footer-info-text;
-
-        &.copyright {
-          border-bottom: 0.0625rem solid v.$darkblue;
-          padding-bottom: 1.25rem;
-        } 
       }
     }
 
     &__socialmedia {
-      display: flex;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 2rem;
+      margin-top: 1.25rem;
+
+      @include m.sm { 
+        display: flex;
+        justify-content: start;
+        align-items: start; 
+        margin-top: 0;
+      }
     }
 
     .mb-2 {
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.5rem; 
     }
 
-    .mb-5 {
+    .mb-nav {
       margin-bottom: 5rem;
+
+      @include m.sm {
+        margin-bottom: 100px; 
+      }
     }
 
     .mb-1 {
@@ -416,6 +518,10 @@
     .center {
       max-width: 12.25rem;
       margin: 0 auto;
+
+      @include m.sm {
+        margin: 0;
+      }
     }
   }
 }
