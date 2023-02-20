@@ -55,6 +55,7 @@
     &__hamburger {
       max-height: 1.5rem;
       max-width: 42px;
+      margin: auto 0;
     }
   }
 
@@ -111,6 +112,11 @@
       @include m.sm {
         max-width: 454px;
       }
+
+      @include m.md {
+        max-width: 528px;
+        margin: 0 auto;
+      }
     }
 
     &.getmore {
@@ -123,6 +129,10 @@
       @include m.sm {
         padding-bottom: 100px;
       }
+
+      @include m.md {
+        padding-bottom: 140px;
+      }
     }
 
     &.useas {
@@ -131,6 +141,10 @@
 
       @include m.sm {
         padding: 100px 0;
+      }
+
+      @include m.md {
+        padding: 140px 0;
       }
     }
 
@@ -192,6 +206,10 @@
       @include m.title--light;
     }
 
+    &__title--choose {
+      @include m.title--choose;
+    }
+
     &__text--light {
       @include m.text--light;
     }
@@ -228,6 +246,10 @@
         max-width: 454px;
       }
 
+      @include m.md {
+        max-width: 528px;
+      }
+
       &.m-6 {
         margin-bottom: 6.25rem;
       }
@@ -243,6 +265,11 @@
       @include m.sm {
         margin-top: 100px;
       }
+
+      @include m.md {
+        margin-top: 140px;
+        gap: 124px;
+      }
     }
 
     &.worktogether {
@@ -251,6 +278,10 @@
 
       @include m.sm {
         margin-bottom: 100px;
+      }
+
+      @include m.md {
+        margin-bottom: 140px;
       }
     }
 
@@ -261,6 +292,10 @@
       @include m.sm {
         margin-top: 140px;
         margin-bottom: 280px;
+      }
+
+      @include m.md {
+        gap: 60px;
       }
     }
 
@@ -320,6 +355,10 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 5.3125rem;
+
+    @include m.md {
+      margin-bottom: 140px;
+    }
 
     &__board--white {
       @include m.board-white;
@@ -395,7 +434,7 @@
     }
 
     &__title {
-      @include m.title-sponsors; 
+      @include m.title-sponsors;
       margin: 0 auto 150px;
     }
 
@@ -441,6 +480,10 @@
         &.opinions__box-opinions__comment {
           background: v.$blue;
         }
+      }
+
+      @include m.md {
+        gap: 32px;
       }
 
       &__comment {
@@ -497,27 +540,48 @@
       display: flex;
       gap: 2.5rem;
       margin-bottom: 8.75rem;
+
+      @include m.md {
+        margin: 0 auto 8.75rem;
+      }
     }
 
     &__logo {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      max-width: 288px;
+      margin: 0 auto 1.5rem;
 
       @include m.sm {
         display: flex;
         justify-content: start;
         align-items: start;
+        margin: 0;
+        max-width: 704px;
+      }
+
+      @include m.md {
+        flex-wrap: nowrap;
+        max-width: 240px;
+        flex-direction: column;
       }
 
       &__img {
+        width: 37px;
+        height: 29px;
         width: max-content;
         margin-right: 0.625rem;
 
         @include m.sm {
           width: 68px;
           height: 53px;
+        }
+
+        @include m.md {
+          width: 37px;
+          height: 29px;
         }
       }
 
@@ -564,6 +628,10 @@
       border-bottom: 0.0625rem solid v.$darkblue;
       padding-bottom: 1.25rem;
 
+      @include m.md {
+        border: none;
+      }
+
       &__text {
         @include m.footer-info-text;
       }
@@ -582,6 +650,20 @@
         align-items: start;
         margin-top: 0;
       }
+    }
+
+    .footer-box {
+      @include m.md {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 45px;
+      }
+    }
+
+    .footer-element {
+      display: flex;
+      flex-direction: column;
+      max-width: 259px;
     }
 
     .mb-2 {
