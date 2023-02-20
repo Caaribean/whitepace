@@ -50,6 +50,32 @@
   }
 }
 
+@mixin btn-header--yellow {
+  padding: 16px 40px;
+  background: v.$yellow;
+  border-radius: 8px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: v.$navyblue;
+}
+
+@mixin btn-header--blue {
+  padding: 16px 24px;
+  background: v.$blue;
+  border-radius: 8px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: v.$white;
+}
+
 @mixin logotext {
   font-style: normal;
   font-weight: 700;
@@ -78,6 +104,10 @@
     font-size: 54px;
     line-height: 65px;
     max-width: 728px;
+  }
+
+  @include md {
+    text-align: left;
   }
 }
 
@@ -115,6 +145,28 @@
     line-height: 65px;
     max-width: 728px;
   }
+
+  @include md {
+    text-align: left;
+  }
+}
+
+@mixin title-sponsors {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  max-width: 18rem;
+  margin-bottom: 1.5rem;
+  color: v.$black;
+
+  @include sm {
+    font-size: 54px;
+    line-height: 65px;
+    max-width: 728px;
+  }
 }
 
 @mixin text {
@@ -130,6 +182,10 @@
 
   @include sm {
     max-width: 728px;
+  }
+
+  @include md {
+    text-align: left;
   }
 }
 
@@ -163,6 +219,10 @@
   @include sm {
     max-width: 728px;
   }
+
+  @include md {
+    text-align: left;
+  }
 }
 
 @mixin text--choose {
@@ -178,6 +238,10 @@
   @include sm {
     max-width: 728px;
   }
+
+  @include md {
+    max-width: 979px;
+  }
 }
 
 @mixin text--montserrat {
@@ -189,6 +253,10 @@
   text-align: center;
   margin-bottom: 3.75rem;
   color: v.$black;
+
+  @include md {
+    text-align: left;
+  }
 }
 
 @mixin btn {

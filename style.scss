@@ -34,8 +34,27 @@
       }
     }
 
+    &__box-btn {
+      display: none;
+
+      @include m.md {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+
+      &__btn--yellow {
+        @include m.btn-header--yellow;
+      }
+
+      &__btn--blue {
+        @include m.btn-header--blue;
+      }
+    }
+
     &__hamburger {
       max-height: 1.5rem;
+      max-width: 42px;
     }
   }
 
@@ -45,6 +64,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @include m.md {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
 
     &__title {
       @include m.title;
@@ -135,6 +160,19 @@
         padding: 140px 0;
       }
     }
+
+    .section-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      @include m.md {
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    }
   }
 
   .section--light {
@@ -143,6 +181,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @include m.md {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
 
     &__title--light {
       @include m.title--light;
@@ -236,6 +280,36 @@
       @include m.sm {
         margin-bottom: 60px;
       }
+
+      @include m.md {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .section-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      @include m.md {
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    }
+
+    .order-box {
+      @include m.md {
+        order: 2;
+      }
+    }
+
+    .image-box {
+      @include m.md {
+        order: 1;
+        margin-right: 33px;
+      }
     }
   }
 
@@ -314,12 +388,6 @@
   }
 
   .sponsors {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6.25rem;
     margin-bottom: 5rem;
 
     @include m.sm {
@@ -327,7 +395,24 @@
     }
 
     &__title {
-      @include m.title--light;
+      @include m.title-sponsors; 
+      margin: 0 auto 150px;
+    }
+
+    &__logo {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6.25rem;
+
+      @include m.md {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 85px;
+      }
     }
   }
 
@@ -491,23 +576,23 @@
       gap: 2rem;
       margin-top: 1.25rem;
 
-      @include m.sm { 
+      @include m.sm {
         display: flex;
         justify-content: start;
-        align-items: start; 
+        align-items: start;
         margin-top: 0;
       }
     }
 
     .mb-2 {
-      margin-bottom: 2.5rem; 
+      margin-bottom: 2.5rem;
     }
 
     .mb-nav {
       margin-bottom: 5rem;
 
       @include m.sm {
-        margin-bottom: 100px; 
+        margin-bottom: 100px;
       }
     }
 
