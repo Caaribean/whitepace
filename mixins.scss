@@ -21,17 +21,17 @@
   }
 }
 
-//   @mixin lg {
-//     @media (min-width: 1440px) {
-//       @content;
-//     }
-//   }
+@mixin lg {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
 
-//   @mixin xl {
-//     @media (min-width: 1920px) {
-//       @content;
-//     }
-//   }
+@mixin xl {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
 
 //
 
@@ -48,6 +48,19 @@
     justify-content: space-between;
     padding-bottom: 140px;
   }
+
+  @include lg {
+    padding-bottom: 100px;
+  }
+}
+
+@mixin navmenu-text {
+  font-family: v.$dmsans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: v.$white;
 }
 
 @mixin btn-header--yellow {
@@ -111,6 +124,36 @@
     font-size: 64px;
     line-height: 77px;
   }
+
+  @include lg {
+    font-size: 72px;
+    line-height: 87px;
+    width: 100%;
+  }
+}
+
+@mixin title-main {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  max-width: 18rem;
+  margin-bottom: 1.5rem;
+  color: v.$white;
+
+  @include sm {
+    font-size: 54px;
+    line-height: 65px;
+    max-width: 728px;
+  }
+
+  @include md {
+    text-align: left;
+    font-size: 64px;
+    line-height: 77px;
+  }
 }
 
 @mixin title--choose {
@@ -135,6 +178,11 @@
     font-size: 64px;
     line-height: 77px;
   }
+
+  @include lg {
+    font-size: 72px;
+    line-height: 87px;
+  }
 }
 
 @mixin title-left {
@@ -152,6 +200,17 @@
     font-size: 54px;
     line-height: 65px;
     max-width: 604px;
+  }
+
+  @include md {
+    font-size: 64px;
+    line-height: 77px;
+  }
+
+  @include lg {
+    font-size: 72px;
+    line-height: 87px;
+    min-width: 1064px;
   }
 }
 
@@ -177,6 +236,12 @@
     font-size: 64px;
     line-height: 77px;
   }
+
+  @include lg {
+    font-size: 72px;
+    line-height: 87px;
+    width: 100%;
+  }
 }
 
 @mixin title-sponsors {
@@ -194,6 +259,16 @@
     font-size: 54px;
     line-height: 65px;
     max-width: 728px;
+  }
+
+  @include md {
+    font-size: 64px;
+    line-height: 77px;
+  }
+
+  @include lg {
+    font-size: 72px;
+    line-height: 87px;
   }
 }
 
@@ -234,6 +309,10 @@
 
   @include md {
     text-align: center;
+  }
+
+  @include lg {
+    min-width: 1064px;
   }
 }
 
@@ -464,6 +543,11 @@
     line-height: 65px;
     letter-spacing: -0.02em;
   }
+
+  @include md {
+    font-size: 70px;
+    line-height: 84px;
+  }
 }
 
 @mixin comment {
@@ -478,6 +562,10 @@
 
   @include md {
     padding: 60px 24px;
+  }
+
+  @include lg {
+    max-width: 424px;
   }
 }
 
