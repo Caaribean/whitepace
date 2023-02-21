@@ -6,7 +6,7 @@
 
 * {
   font-family: v.$inter;
-  font-size: 16px;
+  font-size: 16px;  
 }
 
 .page {
@@ -43,6 +43,10 @@
         justify-content: center;
         align-items: center;
         gap: 32px;
+      }
+
+      @include m.xl {
+        gap: 42px;
       }
 
       &__text {
@@ -149,6 +153,10 @@
 
       @include m.lg {
         max-width: 582px;
+      }
+
+      @include m.xl {
+        max-width: 681px;
       }
     }
 
@@ -301,6 +309,10 @@
 
       @include m.lg {
         max-width: 681px;
+      }
+
+      @include m.xl {
+        max-width: 710px;
       }
 
       &.m-6 {
@@ -507,6 +519,10 @@
 
       @include m.lg {
         gap: 168px; 
+      }
+
+      @include m.lg {
+        gap: 216px; 
       }
     }
   }

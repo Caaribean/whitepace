@@ -269,6 +269,44 @@
     width: 100%;
   }
 }
+@media (min-width: 1920px) {
+  .col-xl-1 {
+    width: 8.3333333333%;
+  }
+  .col-xl-2 {
+    width: 16.6666666667%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.3333333333%;
+  }
+  .col-xl-5 {
+    width: 41.6666666667%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.3333333333%;
+  }
+  .col-xl-8 {
+    width: 66.6666666667%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.3333333333%;
+  }
+  .col-xl-11 {
+    width: 91.6666666667%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -469,6 +507,11 @@ table {
     justify-content: center;
     align-items: center;
     gap: 32px;
+  }
+}
+@media (min-width: 1920px) {
+  .page .header__navmenu {
+    gap: 42px;
   }
 }
 .page .header__navmenu__text {
@@ -732,6 +775,11 @@ table {
 @media (min-width: 1400px) {
   .page .section--dark__image {
     max-width: 582px;
+  }
+}
+@media (min-width: 1920px) {
+  .page .section--dark__image {
+    max-width: 681px;
   }
 }
 .page .section--dark.getmore {
@@ -1017,6 +1065,11 @@ table {
     max-width: 681px;
   }
 }
+@media (min-width: 1920px) {
+  .page .section--light__image {
+    max-width: 710px;
+  }
+}
 .page .section--light__image.m-6 {
   margin-bottom: 6.25rem;
 }
@@ -1142,6 +1195,11 @@ table {
     padding: 40px 44px;
   }
 }
+@media (min-width: 1920px) {
+  .page .boards__board--white {
+    max-width: 472px;
+  }
+}
 .page .boards__board--white__title {
   font-style: normal;
   font-weight: 600;
@@ -1223,6 +1281,11 @@ table {
 @media (min-width: 1152px) {
   .page .boards__board--blue {
     padding: 80px 44px;
+  }
+}
+@media (min-width: 1920px) {
+  .page .boards__board--blue {
+    max-width: 472px;
   }
 }
 .page .boards__board--blue__title {
@@ -1349,6 +1412,11 @@ table {
     gap: 168px;
   }
 }
+@media (min-width: 1400px) {
+  .page .sponsors__logo {
+    gap: 216px;
+  }
+}
 .page .opinions {
   margin-top: 6.25rem;
   margin-bottom: 10.75rem;
@@ -1414,6 +1482,11 @@ table {
 @media (min-width: 1400px) {
   .page .opinions__box-opinions__comment {
     max-width: 424px;
+  }
+}
+@media (min-width: 1920px) {
+  .page .opinions__box-opinions__comment {
+    max-width: 471px;
   }
 }
 .page .opinions__box-opinions__comment__text {
