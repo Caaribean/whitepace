@@ -609,13 +609,13 @@ table {
     text-align: left;
     font-size: 64px;
     line-height: 77px;
+    width: 100%;
   }
 }
 @media (min-width: 1400px) {
   .page .section--dark__title {
     font-size: 72px;
     line-height: 87px;
-    width: 100%;
   }
 }
 .page .section--dark__title--main {
@@ -734,6 +734,11 @@ table {
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
+@media (min-width: 1920px) {
+  .page .section--dark__btn {
+    padding: 20px;
+  }
+}
 .page .section--dark__btn.mb-3 {
   margin-bottom: 3.75rem;
 }
@@ -760,6 +765,12 @@ table {
   .page .section--dark__boximage {
     width: 526px;
     height: 350px;
+  }
+}
+@media (min-width: 1400px) {
+  .page .section--dark__boximage {
+    width: 685px;
+    height: 456px;
   }
 }
 .page .section--dark__image {
@@ -822,6 +833,11 @@ table {
 @media (min-width: 1152px) {
   .page .section--dark.useas {
     padding: 140px 0;
+  }
+}
+@media (min-width: 1400px) {
+  .page .section--dark.useas {
+    gap: 98px;
   }
 }
 .page .section--dark.yourwork {
@@ -915,13 +931,13 @@ table {
     text-align: left;
     font-size: 64px;
     line-height: 77px;
+    width: 100%;
   }
 }
 @media (min-width: 1400px) {
   .page .section--light__title--light {
     font-size: 72px;
     line-height: 87px;
-    width: 100%;
   }
 }
 .page .section--light__title--choose {
@@ -1029,6 +1045,11 @@ table {
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
+@media (min-width: 1920px) {
+  .page .section--light__btn {
+    padding: 20px;
+  }
+}
 .page .section--light__btn.mb-3 {
   margin-bottom: 3.75rem;
 }
@@ -1052,6 +1073,12 @@ table {
   .page .section--light__boximage {
     width: 526px;
     height: 350px;
+  }
+}
+@media (min-width: 1400px) {
+  .page .section--light__boximage {
+    width: 685px;
+    height: 456px;
   }
 }
 .page .section--light__boximage.m-3 {
@@ -1113,6 +1140,11 @@ table {
 @media (min-width: 1152px) {
   .page .section--light.worktogether {
     margin-bottom: 140px;
+  }
+}
+@media (min-width: 1400px) {
+  .page .section--light.worktogether {
+    gap: 160px;
   }
 }
 .page .section--light.customise {

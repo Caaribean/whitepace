@@ -123,12 +123,12 @@
     text-align: left;
     font-size: 64px;
     line-height: 77px;
+    width: 100%;
   }
 
   @include lg {
     font-size: 72px;
     line-height: 87px;
-    width: 100%;
   }
 }
 
@@ -236,12 +236,12 @@
     text-align: left;
     font-size: 64px;
     line-height: 77px;
+    width: 100%;
   }
 
   @include lg {
     font-size: 72px;
     line-height: 87px;
-    width: 100%;
   }
 }
 
@@ -387,6 +387,10 @@
   line-height: 1.875rem;
   letter-spacing: -0.02em;
   color: v.$white;
+
+  @include xl {
+    padding: 20px;
+  }
 }
 
 @mixin boximage {
@@ -402,6 +406,11 @@
   @include md {
     width: 526px;
     height: 350px;
+  }
+
+  @include lg {
+    width: 685px;
+    height: 456px;
   }
 }
 
