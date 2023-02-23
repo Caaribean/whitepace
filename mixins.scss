@@ -718,6 +718,7 @@
     line-height: 87px;
     margin: 0 auto 1.5rem;
     text-align: center;
+    max-width: 608px;
   }
 }
 
@@ -738,6 +739,7 @@
   @include md {
     margin: 0 auto;
     text-align: center;
+    max-width: 608px;
   }
 }
 
@@ -797,6 +799,8 @@
   @include md {
     font-size: 18px;
     line-height: 30px;
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -817,6 +821,7 @@
   @include md {
     font-size: 28px;
     line-height: 36px;
+    text-align: left;
   }
 }
 
@@ -834,6 +839,10 @@
   @include sm {
     margin: 0 0 23px 0;
     max-width: 201px;
+  }
+
+  @include md {
+    text-align: left;
   }
 }
 

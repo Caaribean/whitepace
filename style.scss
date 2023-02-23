@@ -135,7 +135,7 @@
           margin-bottom: 0;
         }
       }
-    } 
+    }
 
     &__boximage {
       @include m.boximage;
@@ -195,7 +195,7 @@
       @include m.md {
         padding: 140px 0;
       }
-      
+
       @include m.lg {
         gap: 98px;
       }
@@ -376,7 +376,7 @@
 
       @include m.md {
         gap: 60px;
-      } 
+      }
     }
 
     &.yourdata {
@@ -390,7 +390,7 @@
     }
 
     &.chooseplan {
-      margin-bottom: 85px; 
+      margin-bottom: 85px;
 
       @include m.sm {
         margin-bottom: 60px;
@@ -618,7 +618,7 @@
       @include m.footer-title;
     }
 
-    &__text { 
+    &__text {
       @include m.footer-text;
     }
 
@@ -631,8 +631,15 @@
       gap: 2.5rem;
       margin-bottom: 8.75rem;
 
+      @include m.sm {
+        margin-bottom: 80px;
+      }
+
       @include m.md {
-        margin: 0 auto 8.75rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 140px;
       }
     }
 
@@ -687,7 +694,7 @@
         margin-top: 24px;
 
         @include m.md {
-          margin-top: 0;  
+          margin-top: 15px;
         }
       }
     }
@@ -715,7 +722,7 @@
     &__smalltext {
       @include m.footer-smalltext;
     }
- 
+
     &__socialmedia {
       margin-bottom: 2rem;
     }
@@ -728,6 +735,9 @@
 
       @include m.md {
         border: none;
+        justify-content: space-between;
+        gap: 60px;
+        margin-bottom: 0;
       }
 
       &__text {
@@ -748,17 +758,24 @@
         align-items: start;
         margin-top: 0;
       }
+
+      @include m.md {
+        margin-right: 5px;
+      }
     }
 
     .footer-box {
-      @include m.md { 
+      @include m.md {
         display: flex;
         flex-wrap: nowrap;
-        gap: 45px;
+        justify-content: space-around;
+        /* gap: 45px; */
+        border-bottom: 1px solid #2e4e73;
+        padding-bottom: 67px;
       }
- 
+
       @include m.lg {
-        gap: 100px;
+        /* gap: 100px; */
       }
     }
 
@@ -767,14 +784,26 @@
       flex-direction: column;
       max-width: 259px;
       margin: 0 auto;
- 
+
       @include m.sm {
-        margin: auto 0 100px; 
+        margin: auto 0 100px;
+      }
+
+      @include m.md {
+        margin: 0;
+      }
+    }
+
+    .box { 
+      @include m.md {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
       }
     }
 
     .mb-2 {
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.5rem; 
     }
 
     .mb-nav {
@@ -787,7 +816,7 @@
 
     .mb-1 {
       margin-bottom: 0.9375rem;
-    } 
+    }
 
     .center {
       max-width: 12.25rem;

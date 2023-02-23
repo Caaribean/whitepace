@@ -1670,6 +1670,7 @@ table {
     line-height: 87px;
     margin: 0 auto 1.5rem;
     text-align: center;
+    max-width: 608px;
   }
 }
 .page .footer__text {
@@ -1691,6 +1692,7 @@ table {
   .page .footer__text {
     margin: 0 auto;
     text-align: center;
+    max-width: 608px;
   }
 }
 .page .footer__btn {
@@ -1716,9 +1718,17 @@ table {
   gap: 2.5rem;
   margin-bottom: 8.75rem;
 }
+@media (min-width: 768px) {
+  .page .footer__icons {
+    margin-bottom: 80px;
+  }
+}
 @media (min-width: 1152px) {
   .page .footer__icons {
-    margin: 0 auto 8.75rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 140px;
   }
 }
 .page .footer__logo {
@@ -1806,6 +1816,8 @@ table {
   .page .footer__text-logo {
     font-size: 18px;
     line-height: 30px;
+    margin: 0;
+    width: 100%;
   }
 }
 .page .footer__text-logo.mt {
@@ -1813,7 +1825,7 @@ table {
 }
 @media (min-width: 1152px) {
   .page .footer__text-logo.mt {
-    margin-top: 0;
+    margin-top: 15px;
   }
 }
 .page .footer__navfooter {
@@ -1888,6 +1900,7 @@ table {
   .page .footer__smalltitle {
     font-size: 28px;
     line-height: 36px;
+    text-align: left;
   }
 }
 .page .footer__smalltext {
@@ -1905,6 +1918,11 @@ table {
   .page .footer__smalltext {
     margin: 0 0 23px 0;
     max-width: 201px;
+  }
+}
+@media (min-width: 1152px) {
+  .page .footer__smalltext {
+    text-align: left;
   }
 }
 .page .footer__socialmedia {
@@ -1932,6 +1950,9 @@ table {
 @media (min-width: 1152px) {
   .page .footer__information {
     border: none;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 0;
   }
 }
 .page .footer__information__text {
@@ -1959,15 +1980,23 @@ table {
   }
 }
 @media (min-width: 1152px) {
+  .page .footer__socialmedia {
+    margin-right: 5px;
+  }
+}
+@media (min-width: 1152px) {
   .page .footer .footer-box {
     display: flex;
     flex-wrap: nowrap;
-    gap: 45px;
+    justify-content: space-around;
+    /* gap: 45px; */
+    border-bottom: 1px solid #2e4e73;
+    padding-bottom: 67px;
   }
 }
 @media (min-width: 1400px) {
   .page .footer .footer-box {
-    gap: 100px;
+    /* gap: 100px; */
   }
 }
 .page .footer .footer-element {
@@ -1979,6 +2008,18 @@ table {
 @media (min-width: 768px) {
   .page .footer .footer-element {
     margin: auto 0 100px;
+  }
+}
+@media (min-width: 1152px) {
+  .page .footer .footer-element {
+    margin: 0;
+  }
+}
+@media (min-width: 1152px) {
+  .page .footer .box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
   }
 }
 .page .footer .mb-2 {
