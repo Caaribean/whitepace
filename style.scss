@@ -12,8 +12,8 @@
 .page {
   padding: 0 1rem;
 
-  @include m.sm {
-    padding: 0 32px;
+  @include m.sm { 
+    padding: 0 2rem;
   }
 
   .header {
@@ -25,8 +25,8 @@
         height: 1.25rem;
 
         @include m.sm {
-          width: 37px;
-          height: 29px;
+          width: 2.3125rem;
+          height: 1.8125rem;
         }
       }
       &__text {
@@ -42,11 +42,11 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 32px;
+        gap: 2rem;
       }
 
       @include m.xl {
-        gap: 42px;
+        gap: 2.625rem;
       }
 
       &__text {
@@ -60,7 +60,7 @@
       @include m.md {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 1.5rem;
       }
 
       @include m.lg {
@@ -79,7 +79,7 @@
 
     &__hamburger {
       max-height: 1.5rem;
-      max-width: 42px;
+      max-width: 2.625rem;
       margin: auto 0;
 
       @include m.lg {
@@ -143,24 +143,24 @@
 
     &__image {
       width: 100%;
-      max-width: 279px;
+      max-width: 17.4375rem;
       margin-bottom: 6.25rem;
 
       @include m.sm {
-        max-width: 454px;
+        max-width: 28.375rem;
       }
 
       @include m.md {
-        max-width: 528px;
+        max-width: 33rem;
         margin: 0 auto;
       }
 
       @include m.lg {
-        max-width: 582px;
+        max-width: 36.375rem;
       }
 
       @include m.xl {
-        max-width: 681px;
+        max-width: 42.5625rem;
       }
     }
 
@@ -172,15 +172,19 @@
       padding-bottom: 5rem;
 
       @include m.sm {
-        padding-bottom: 100px;
+        padding-bottom: 6.25rem;
       }
 
       @include m.md {
-        padding-bottom: 140px;
+        padding-bottom: 8.75rem;
       }
 
       @include m.lg {
-        padding-bottom: 100px;
+        padding-bottom: 6.25rem;
+      }
+
+      @include m.xl {
+        background-size: 100%;
       }
     }
 
@@ -189,15 +193,15 @@
       padding: 5rem 0;
 
       @include m.sm {
-        padding: 100px 0;
+        padding: 6.25rem 0;
       }
 
       @include m.md {
-        padding: 140px 0;
+        padding: 8.75rem 0;
       }
 
       @include m.lg {
-        gap: 98px;
+        gap: 6.125rem;
       }
     }
 
@@ -210,7 +214,7 @@
       align-items: start;
 
       @include m.sm {
-        padding: 140px 0;
+        padding: 8.75rem 0;
         background-image: url(./images/background2.png);
         background-repeat: no-repeat;
       }
@@ -236,7 +240,11 @@
       padding: 5rem 0;
 
       @include m.sm {
-        padding: 140px 0;
+        padding: 8.75rem 0;
+      }
+
+      @include m.xl {
+        background-size: 100%;
       }
     }
 
@@ -309,22 +317,22 @@
 
     &__image {
       width: 100%;
-      max-width: 279px;
+      max-width: 17.4375rem;
 
       @include m.sm {
-        max-width: 454px;
+        max-width: 28.375rem;
       }
 
       @include m.md {
-        max-width: 528px;
+        max-width: 33rem;
       }
 
       @include m.lg {
-        max-width: 681px;
+        max-width: 42.5625rem;
       }
 
       @include m.xl {
-        max-width: 710px;
+        max-width: 44.375rem;
       }
 
       &.m-6 {
@@ -339,12 +347,12 @@
       background-position-x: left;
 
       @include m.sm {
-        margin-top: 100px;
+        margin-top: 6.25rem;
       }
 
       @include m.md {
-        margin-top: 140px;
-        gap: 124px;
+        margin-top: 8.75rem;
+        gap: 7.75rem;
       }
     }
 
@@ -353,15 +361,15 @@
       margin-bottom: 5rem;
 
       @include m.sm {
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
       }
 
       @include m.md {
-        margin-bottom: 140px;
+        margin-bottom: 8.75rem;
       }
 
       @include m.lg {
-        gap: 160px;
+        gap: 10rem;
       }
     }
 
@@ -370,12 +378,12 @@
       margin-bottom: 11.25rem;
 
       @include m.sm {
-        margin-top: 140px;
-        margin-bottom: 280px;
+        margin-top: 8.75rem;
+        margin-bottom: 17.5rem;
       }
 
       @include m.md {
-        gap: 60px;
+        gap: 5rem;
       }
     }
 
@@ -384,16 +392,16 @@
       margin-bottom: 10rem;
 
       @include m.sm {
-        margin-top: 140px;
-        margin-bottom: 280px;
+        margin-top: 8.75rem;
+        margin-bottom: 17.5rem;
       }
     }
 
     &.chooseplan {
-      margin-bottom: 85px;
+      margin-bottom: 5.3125rem;
 
       @include m.sm {
-        margin-bottom: 60px;
+        margin-bottom: 5rem;
       }
 
       @include m.md {
@@ -425,7 +433,7 @@
       justify-content: center;
       @include m.md {
         order: 1;
-        margin-right: 33px;
+        margin-right: 2rem;
       }
     }
   }
@@ -439,7 +447,7 @@
     margin-bottom: 5.3125rem;
 
     @include m.md {
-      margin-bottom: 140px;
+      margin-bottom: 8.75rem;
     }
 
     &__board--white {
@@ -512,12 +520,11 @@
     margin-bottom: 5rem;
 
     @include m.sm {
-      margin-bottom: 140px;
+      margin-bottom: 8.75rem;
     }
 
     &__title {
       @include m.title-sponsors;
-      margin: 0 auto 100px;
     }
 
     &__logo {
@@ -532,15 +539,15 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        gap: 85px;
+        gap: 5.3125rem;
       }
 
       @include m.lg {
-        gap: 168px;
+        gap: 10.5rem;
       }
 
       @include m.lg {
-        gap: 216px;
+        gap: 13.5rem;
       }
     }
   }
@@ -550,7 +557,7 @@
     margin-bottom: 10.75rem;
 
     @include m.sm {
-      margin-top: 140px;
+      margin-top: 8.75rem;
     }
 
     &__title {
@@ -573,7 +580,7 @@
       }
 
       @include m.md {
-        gap: 32px;
+        gap: 2rem;
       }
 
       &__comment {
@@ -632,14 +639,14 @@
       margin-bottom: 8.75rem;
 
       @include m.sm {
-        margin-bottom: 80px;
+        margin-bottom: 5rem;
       }
 
       @include m.md {
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-bottom: 140px;
+        margin-bottom: 8.75rem;
       }
     }
 
@@ -648,7 +655,7 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      max-width: 288px;
+      max-width: 18rem;
       margin: 0 auto 1.5rem;
 
       @include m.sm {
@@ -656,29 +663,29 @@
         justify-content: start;
         align-items: start;
         margin: 0;
-        max-width: 704px;
+        max-width: 44rem;
       }
 
       @include m.md {
         flex-wrap: nowrap;
-        max-width: 240px;
+        max-width: 15rem;
         flex-direction: column;
       }
 
       &__img {
-        width: 37px;
-        height: 29px;
+        width: 2.3125rem;
+        height: 1.8125rem;
         width: max-content;
         margin-right: 0.625rem;
 
         @include m.sm {
-          width: 68px;
-          height: 53px;
+          width: 4.25rem;
+          height: 3.3125rem;
         }
 
         @include m.md {
-          width: 37px;
-          height: 29px;
+          width: 2.3125rem;
+          height: 1.8125rem;
         }
       }
 
@@ -691,10 +698,10 @@
       @include m.footer-text-logo;
 
       &.mt {
-        margin-top: 24px;
+        margin-top: 1.5rem;
 
         @include m.md {
-          margin-top: 15px;
+          margin-top: 0.9375rem;
         }
       }
     }
@@ -729,14 +736,13 @@
 
     &__information {
       @include m.footer-information;
-
       border-bottom: 0.0625rem solid v.$darkblue;
       padding-bottom: 1.25rem;
 
       @include m.md {
         border: none;
         justify-content: space-between;
-        gap: 60px;
+        gap: 3.75rem;
         margin-bottom: 0;
       }
 
@@ -760,7 +766,7 @@
       }
 
       @include m.md {
-        margin-right: 5px;
+        margin-right: 0.3125rem;
       }
     }
 
@@ -769,24 +775,19 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-around;
-        /* gap: 45px; */
-        border-bottom: 1px solid #2e4e73;
-        padding-bottom: 67px;
-      }
-
-      @include m.lg {
-        /* gap: 100px; */
+        border-bottom: 0.0625rem solid v.$darkblue;
+        padding-bottom: 4.1875rem;
       }
     }
 
     .footer-element {
       display: flex;
       flex-direction: column;
-      max-width: 259px;
+      max-width: 16.1875rem;
       margin: 0 auto;
 
       @include m.sm {
-        margin: auto 0 100px;
+        margin: auto 0 6.25rem;
       }
 
       @include m.md {
@@ -794,23 +795,23 @@
       }
     }
 
-    .box { 
+    .box {
       @include m.md {
         display: flex;
         justify-content: space-between;
-        margin-top: 32px;
+        margin-top: 2rem;
       }
     }
 
     .mb-2 {
-      margin-bottom: 2.5rem; 
+      margin-bottom: 2.5rem;
     }
 
     .mb-nav {
       margin-bottom: 5rem;
 
       @include m.sm {
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
       }
     }
 
