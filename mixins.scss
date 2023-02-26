@@ -21,17 +21,17 @@
   }
 }
 
-//   @mixin lg {
-//     @media (min-width: 1440px) {
-//       @content;
-//     }
-//   }
+@mixin lg {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
 
-//   @mixin xl {
-//     @media (min-width: 1920px) {
-//       @content;
-//     }
-//   }
+@mixin xl {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
 
 //
 
@@ -43,11 +43,50 @@
   padding-bottom: 5rem;
 
   @include sm {
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 140px;
+    padding-bottom: 8.75rem;
   }
+
+  @include lg {
+    padding-bottom: 6.25rem;
+  }
+}
+
+@mixin navmenu-text {
+  font-family: v.$dmsans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  color: v.$white;
+}
+
+@mixin btn-header--yellow {
+  padding: 1rem 2.5rem;
+  background: v.$yellow;
+  border-radius: 0.5rem;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  letter-spacing: -0.02em;
+  color: v.$navyblue;
+}
+
+@mixin btn-header--blue {
+  padding: 1rem 1.5rem;
+  background: v.$blue;
+  border-radius: 0.5rem;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  letter-spacing: -0.02em;
+  color: v.$white;
 }
 
 @mixin logotext {
@@ -58,8 +97,8 @@
   color: v.$white;
 
   @include sm {
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 1.75rem;
+    line-height: 2.125rem;
   }
 }
 
@@ -75,9 +114,75 @@
   color: v.$white;
 
   @include sm {
-    font-size: 54px;
-    line-height: 65px;
-    max-width: 728px;
+    font-size: 3.375rem;
+    line-height: 4.0625rem;
+    max-width: 45.5rem;
+  }
+
+  @include md {
+    text-align: left;
+    font-size: 4rem;
+    line-height: 4.8125rem;
+    width: 100%;
+  }
+
+  @include lg {
+    font-size: 4.5rem;
+    line-height: 5.4375rem;
+  }
+}
+
+@mixin title-main {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  max-width: 18rem;
+  margin-bottom: 1.5rem;
+  color: v.$white;
+
+  @include sm {
+    font-size: 3.375rem;
+    line-height: 4.0625rem;
+    max-width: 45.5rem;
+  }
+
+  @include md {
+    text-align: left;
+    font-size: 4rem;
+    line-height: 4.8125rem;
+    width: 100%;
+  }
+}
+
+@mixin title--choose {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  max-width: 18rem;
+  margin-bottom: 1.5rem;
+  color: v.$black;
+
+  @include sm {
+    font-size: 3.375rem;
+    line-height: 4.0625rem;
+    max-width: 45.5rem;
+  }
+
+  @include md {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 4.8125rem;
+  }
+
+  @include lg {
+    font-size: 4.5rem;
+    line-height: 5.4375rem;
   }
 }
 
@@ -93,9 +198,20 @@
   color: v.$white;
 
   @include sm {
-    font-size: 54px;
-    line-height: 65px;
-    max-width: 604px;
+    font-size: 3.375rem;
+    line-height: 4.0625rem;
+    max-width: 37.75rem;
+  }
+
+  @include md {
+    font-size: 4rem;
+    line-height: 4.8125rem;
+  }
+
+  @include lg {
+    font-size: 4.5rem;
+    line-height: 5.4375rem;
+    min-width: 66.5rem;
   }
 }
 
@@ -111,9 +227,50 @@
   color: v.$black;
 
   @include sm {
-    font-size: 54px;
-    line-height: 65px;
-    max-width: 728px;
+    font-size: 3.375rem;
+    line-height: 4.0625rem;
+    max-width: 45.5rem;
+  }
+
+  @include md {
+    text-align: left;
+    font-size: 4rem;
+    line-height: 4.8125rem;
+    width: 100%;
+  }
+
+  @include lg {
+    font-size: 4.5rem;
+    line-height: 5.4375rem;
+  }
+}
+
+@mixin title-sponsors {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  max-width: 18rem;
+  margin-bottom: 1.5rem;
+  color: v.$black;
+  margin: 0 auto 6.25rem;
+
+  @include sm {
+    font-size: 3.375rem;
+    line-height: 4.0625rem;
+    max-width: 45.5rem;
+  }
+
+  @include md {
+    font-size: 4rem;
+    line-height: 4.8125rem;
+  }
+
+  @include lg {
+    font-size: 4.5rem;
+    line-height: 5.4375rem;
   }
 }
 
@@ -129,7 +286,11 @@
   color: v.$white;
 
   @include sm {
-    max-width: 728px;
+    max-width: 45.5rem;
+  }
+
+  @include md {
+    text-align: left;
   }
 }
 
@@ -145,7 +306,15 @@
   color: v.$white;
 
   @include sm {
-    max-width: 604px;
+    max-width: 37.75rem;
+  }
+
+  @include md {
+    text-align: center;
+  }
+
+  @include lg {
+    min-width: 66.5rem;
   }
 }
 
@@ -161,7 +330,11 @@
   color: v.$black;
 
   @include sm {
-    max-width: 728px;
+    max-width: 45.5rem;
+  }
+
+  @include md {
+    text-align: left;
   }
 }
 
@@ -176,7 +349,11 @@
   color: v.$black;
 
   @include sm {
-    max-width: 728px;
+    max-width: 45.5rem;
+  }
+
+  @include md {
+    max-width: 61.1875rem;
   }
 }
 
@@ -189,6 +366,17 @@
   text-align: center;
   margin-bottom: 3.75rem;
   color: v.$black;
+  max-width: 18rem;
+
+  @include sm {
+    font-family: v.$inter;
+    line-height: 1.875rem;
+    max-width: 45.5rem;
+  }
+
+  @include md {
+    text-align: left;
+  }
 }
 
 @mixin btn {
@@ -202,6 +390,10 @@
   line-height: 1.875rem;
   letter-spacing: -0.02em;
   color: v.$white;
+
+  @include xl {
+    padding: 1.25rem;
+  }
 }
 
 @mixin boximage {
@@ -210,8 +402,18 @@
   height: 11.9375rem;
 
   @include sm {
-    width: 551px;
-    height: 367px;
+    width: 34.4375rem;
+    height: 22.9375rem;
+  }
+
+  @include md {
+    width: 32.875rem;
+    height: 21.875rem;
+  }
+
+  @include lg {
+    width: 41.125rem;
+    height: 28.5rem;
   }
 }
 
@@ -224,6 +426,14 @@
   border-radius: 0.625rem;
   padding: 1.25rem;
   max-width: 18.0625rem;
+
+  @include md {
+    padding: 5rem 2.75rem;
+  }
+
+  @include xl {
+    max-width: 29.5rem;
+  }
 }
 
 @mixin board-white {
@@ -235,6 +445,14 @@
   border-radius: 0.625rem;
   padding: 1.25rem;
   max-width: 18.0625rem;
+
+  @include md {
+    padding: 2.5rem 2.75rem;
+  }
+
+  @include xl {
+    max-width: 29.5rem;
+  }
 }
 
 @mixin board-title {
@@ -283,6 +501,12 @@
   letter-spacing: -0.02em;
   margin-bottom: 1.5625rem;
   color: v.$whtite2;
+
+  @include md {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+  }
 }
 
 @mixin board-text-white {
@@ -293,6 +517,12 @@
   letter-spacing: -0.02em;
   margin-bottom: 1.5625rem;
   color: v.$black;
+
+  @include md {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+  }
 }
 
 @mixin board-btn {
@@ -330,9 +560,14 @@
   color: v.$black;
 
   @include sm {
-    font-size: 54px;
-    line-height: 65px;
+    font-size: 3.375rem;
+    line-height: 4.0625rem;
     letter-spacing: -0.02em;
+  }
+
+  @include md {
+    font-size: 4.375rem;
+    line-height: 5.25rem;
   }
 }
 
@@ -345,6 +580,18 @@
   box-shadow: v.$commentshadow;
   border-radius: 0.625rem;
   max-width: 18rem;
+
+  @include md {
+    padding: 3.75rem 1.5rem;
+  }
+
+  @include lg {
+    max-width: 26.5rem;
+  }
+
+  @include xl {
+    max-width: 29.4375rem;
+  }
 }
 
 @mixin text-opinion {
@@ -360,8 +607,8 @@
   margin-bottom: 2.5rem;
 
   @include sm {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
   }
 }
 
@@ -378,8 +625,8 @@
   margin-bottom: 2.5rem;
 
   @include sm {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
   }
 }
 
@@ -391,6 +638,12 @@
   letter-spacing: -0.02em;
   color: v.$black;
   margin-bottom: 0.9375rem;
+
+  @include md {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
 }
 
 @mixin opinion-name-blue {
@@ -401,6 +654,12 @@
   letter-spacing: -0.02em;
   color: v.$navyblue;
   margin-bottom: 0.9375rem;
+
+  @include md {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
 }
 
 @mixin opinion-caption {
@@ -410,6 +669,11 @@
   line-height: 1.875rem;
   letter-spacing: -0.02em;
   color: v.$black;
+
+  @include md {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 
 @mixin opinion-caption-white {
@@ -419,6 +683,11 @@
   line-height: 1.875rem;
   letter-spacing: -0.02em;
   color: v.$white;
+
+  @include md {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 
 @mixin footer {
@@ -429,21 +698,30 @@
   flex-direction: column;
 
   @include sm {
-    padding-top: 140px;
+    padding-top: 8.75rem;
   }
 }
 
 @mixin footer-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
   margin-bottom: 1.5rem;
   color: v.$white;
 
   @include sm {
-    font-size: 54px;
-    line-height: 62px;
+    font-size: 3.375rem;
+    line-height: 3.875rem;
+    width: 100%;
+  }
+
+  @include md {
+    font-size: 4.5rem;
+    line-height: 5.4375rem;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+    max-width: 38rem;
   }
 }
 
@@ -454,11 +732,20 @@
   line-height: 1.875rem;
   letter-spacing: -0.02em;
   color: v.$white;
+  display: flex;
+  flex-wrap: wrap;
 
   @include sm {
     font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  @include md {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 38rem;
+    justify-content: center;
   }
 }
 
@@ -473,6 +760,11 @@
   line-height: 1.25rem;
   color: v.$white;
   border: none;
+
+  @include md {
+    margin: 0 auto;
+    padding: 1.25rem 2.5rem;
+  }
 }
 
 @mixin footer-logo {
@@ -483,8 +775,13 @@
   color: v.$white;
 
   @include sm {
-    font-size: 51px;
-    line-height: 62px;
+    font-size: 3.1875rem;
+    line-height: 3.875rem;
+  }
+
+  @include md {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
   }
 }
 
@@ -502,7 +799,14 @@
   @include sm {
     max-width: max-content;
     text-align: left;
-    margin: 0 0 150px;
+    margin: 0 0 6.25rem;
+  }
+
+  @include md {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -517,7 +821,13 @@
   color: v.$white;
 
   @include sm {
-    max-width: 201px;
+    max-width: 12.5625rem;
+  }
+
+  @include md {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    text-align: left;
   }
 }
 
@@ -533,8 +843,12 @@
   margin: 0 auto 1.4375rem;
 
   @include sm {
-    margin: 0 0 23px 0;
-    max-width: 201px;
+    margin: 0 0 1.4375rem 0;
+    max-width: 12.5625rem;
+  }
+
+  @include md {
+    text-align: left;
   }
 }
 
@@ -560,6 +874,11 @@
   text-align: center;
   letter-spacing: -0.02em;
   color: v.$white;
+
+  @include md {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 
 @mixin navfooter-text--bold {
@@ -580,13 +899,17 @@
   text-align: center;
   letter-spacing: -0.02em;
   color: v.$yellow;
+
+  @include md {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 
 @mixin footer-information {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 5rem;
   align-items: center;
   justify-content: center;
 
@@ -594,8 +917,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 40px;
+    justify-content: space-around;
+    margin-bottom: 2.5rem;
   }
 }
 

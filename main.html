@@ -8,85 +8,100 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div class="page">
       <header class="header">
-          <div class="header__logo col-3">
+          <div class="header__logo col-3 col-sm-7 col-md-7 col-lg-3 col-xl-4">
             <img class="header__logo__img" src="./images/icon-logo.png" />
             <span class="header__logo__text">whitepace</span>
           </div>
-          <img class="header__hamburger" src="./images/hamburger.png" />
+          <div class="header__navmenu col-lg-5 col-xl-5">
+            <a class="header__navmenu__text">Products<span class="icon-arrow-down--white"></span></a>
+            <a class="header__navmenu__text">Solutions<span class="icon-arrow-down--white"></span></a>
+            <a class="header__navmenu__text">Resources<span class="icon-arrow-down--white"></span></a>
+            <a class="header__navmenu__text">Pricing<span class="icon-arrow-down--white"></span></a>
+          </div>
+          <div class="header__box-btn col-md-5 col-lg-4 col-xl-3">
+            <button class="header__box-btn__btn--yellow">Login</button>
+          <button class="header__box-btn__btn--blue">
+            Try Whitepace free<span class="icon-arrow-right"></span>
+          </button>
+        </div> 
+          <img class="header__hamburger col-1 col-sm-1 col-md-1" src="./images/hamburger.png" />
       </header>
 
       <div class="section--dark getmore col-4">
-        <h2 class="section--dark__title">Get More Done with whitepace</h2>
-        <span class="section--dark__text"
+        <div class="section-box col-md-6 col-lg-6 col-xl-6">
+        <h2 class="section--dark__title--main col-sm-6">Get More Done with whitepace</h2>
+        <span class="section--dark__text col-sm-8"
           >Project management software that enables your teams to collaborate,
           plan, analyze and manage everyday tasks</span
         >
-        <button class="section--dark__btn mb-6">
+        <button class="section--dark__btn mb-6 col-sm-3 col-md-6 col-xl-3">
           Try TasKey Free <span class="icon-arrow-right"></span>
-        </button>
-        <div class="section--dark__boximage"><img /></div>
+        </button></div>
+        <div class="section--dark__boximage col-sm-6 col-md-6 col-lg-6 col-xl-6"><img /></div>
       </div>
 
       <div class="section--light projectmanagement col-4">
-        <h2 class="section--light__title--light">Project Management</h2>
-        <span class="section--light__text--light"
+        <div class="section-box col-md-5 col-lg-5 col-xl-6">
+        <h2 class="section--light__title--light col-sm-6">Project Management</h2>
+        <span class="section--light__text--light col-sm-8"
           >Images, videos, PDFs and audio files are supported. Create math
           expressions and diagrams directly from the app. Take photos with the
           mobile app and save them to a note.</span
         >
-        <button class="section--light__btn mb-3">
+        <button class="section--light__btn mb-3 col-sm-4 col-xl-3">
           Get Started<span class="icon-arrow-right"></span>
-        </button>
-        <div class="section--light__boximage"><img /></div>
+        </button></div>
+        <div class="section--light__boximage col-sm-6 col-md-7 col-lg-7 col-xl-6"><img /></div>
       </div>
 
       <div class="section--light worktogether col-4">
-        <h2 class="section--light__title--light">Work together</h2>
-        <span class="section--light__text--light"
+        <div class="section-box order-box col-md-6 col-lg-6 col-xl-6"><h2 class="section--light__title--light col-sm-6">Work together</h2>
+        <span class="section--light__text--light col-sm-8"
           >With whitepace, share your notes with your colleagues and collaborate
           on them. You can also publish a note to the internet and share the URL
           with others.
-        </span>
-        <button class="section--light__btn mb-3">
+        </span> 
+        <button class="section--light__btn mb-3 col-sm-4 col-xl-3">
           Try it now<span class="icon-arrow-right"></span>
-        </button> 
-        <img class="section--light__image" src="./images/work-together.png" />
+        </button></div> 
+        <div class="image-box col-sm-6 col-md-6 col-lg-6 col-xl-6"><img class="section--light__image" src="./images/work-together.png" /></div>
       </div>
 
       <div class="section--dark useas col-4">
-        <h2 class="section--dark__title">Use as Extension</h2>
-        <span class="section--dark__text"
+        <div class="section-box col-md-6 col-lg-5 col-xl-6"><h2 class="section--dark__title col-sm-6">Use as Extension</h2>
+        <span class="section--dark__text col-sm-8"
           >Customise the app with plugins, custom themes and multiple text
           editors (Rich Text or Markdown). Or create your own scripts and
           plugins using the Extension API.</span
         >
-        <button class="section--dark__btn mb-3">
+        <button class="section--dark__btn mb-3 col-sm-4 col-xl-3">
           Let’s Go<span class="icon-arrow-right"></span>
-        </button> 
-        <div class="section--dark__boximage"><img /></div>
+        </button></div>
+        <div class="section--dark__boximage col-lg-7 col-xl-6"><img /></div>
       </div>
 
       <div class="section--light customise col-4">
-        <div class="section--light__boximage m-3"><img /></div>
-        <h2 class="section--light__title--light">Customise it to your needs</h2>
-        <span class="section--light__text--montserrat" 
+        <div class="section--light__boximage m-3 col-md-6 col-lg-6 col-xl-6"><img /></div>
+        <div class="section-box col-md-6 col-lg-6 col-xl-6"><h2 class="section--light__title--light col-sm-6">Customise it to your needs</h2>
+        <span class="section--light__text--montserrat col-sm-8" 
           >Customise the app with plugins, custom themes and multiple text
           editors (Rich Text or Markdown). Or create your own scripts and
           plugins using the Extension API.
         </span>
-        <button class="section--light__btn">
+        <button class="section--light__btn col-sm-4 col-xl-3">
           Let’s Go<span class="icon-arrow-right"></span>
-        </button>
+        </button></div>
       </div>
 
-      <div class="section--light chooseplan col-4">
-        <h2 class="section--light__title--light">Choose Your Plan</h2>
-        <span class="section--light__text--choose"
+      <div class="section--light chooseplan col-4 col-lg-12 col-xl-12">
+      <h2 class="section--light__title--choose col-sm-6 col-md-6">Choose Your Plan</h2>
+        <span class="section--light__text--choose col-sm-8 col-md-12"
           >Whether you want to get organized, keep your personal life on track,
           or boost workplace productivity, Evernote has the right plan for you.
         </span>
@@ -110,7 +125,7 @@
             <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>Add due dates, reminders, and notifications to your tasks
             </li>
           </ul>
-          <button class="boards__board--white__btn col-3">Get Started</button>
+          <button class="boards__board--white__btn col-3 col-sm-5 col-xl-5">Get Started</button>
         </div>
 
         <div class="boards__board--blue col-4">
@@ -129,7 +144,7 @@
             <li class="boards__board--blue__list__item"><span class="icon-check-circle--yellow"></span>Add due dates, reminders, and notifications to your tasks
             </li>
           </ul>
-          <button class="boards__board--blue__btn col-3">Get Started</button>
+          <button class="boards__board--blue__btn col-3 col-sm-5 col-xl-5">Get Started</button>
         </div>
 
         <div class="boards__board--white col-4">
@@ -148,49 +163,50 @@
             <li class="boards__board--white__list__item"><span class="icon-check-circle--yellow"></span>Add due dates, reminders, and notifications to your tasks
             </li>
           </ul>
-          <button class="boards__board--white__btn col-3">Get Started</button>
+          <button class="boards__board--white__btn col-3 col-sm-5 col-xl-5">Get Started</button>
         </div>
 
       </div>
 
-      <div class="section--dark yourwork col-4">
+      <div class="section--dark yourwork">
         <h2 class="section--dark__title--left">Your work, everywhere you are</h2>
-        <span class="section--dark__text--left"
+        <span class="section--dark__text--left col-4 col-sm-7 col-md-7 col-lg-12 col-xl-12"
           >Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</span
         >
-        <button class="section--dark__btn col-sm-2">
+        <button class="section--dark__btn col-sm-3 col-md-3 col-lg-2 col-xl-2">
           Try Taskey<span class="icon-arrow-right"></span>
         </button>
       </div>
 
       <div class="section--light yourdata col-4">
-        <img class="section--light__image m-6" src="./images/elipse.png" />
-        <h2 class="section--light__title--light">100% your data</h2>
+        <div class="image-box col-sm-6 col-md-6 col-lg-6 col-xl-6"><img class="section--light__image m-6" src="./images/elipse.png" /></div>
+        <div class="section-box col-sm-8 col-md-6 col-lg-6 col-xl-6"><h2 class="section--light__title--light">100% your data</h2>
         <span class="section--light__text--light"
           >The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
         </span>
-        <button class="section--light__btn">
+        <button class="section--light__btn col-xl-3">
           Read more<span class="icon-arrow-right"></span>
-        </button>
+        </button></div>
       </div>
  
       <div class="sponsors">
         <h2 class="sponsors__title">Our sponsors</h2>
-        <span class="icon-apple--sponsors"></span>
+        <div class="sponsors__logo"><span class="icon-apple--sponsors"></span>
         <img src="./images/microsoft.png">
         <img src="./images/slack.png">
-        <img src="./images/google.png">
+        <img src="./images/google.png"></div>
+        
       </div> 
 
       <div class="section--dark workwith col-4">
-        <img class="section--dark__image" src="./images/apps.png" />
-        <h2 class="section--dark__title">Work with Your Favorite Apps Using whitepace</h2>
+        <img class="section--dark__image col-md-6 col-lg-6 col-xl-5" src="./images/apps.png" />
+        <div class="section-box col-sm-8 col-md-6 col-lg-6 col-xl-7"><h2 class="section--dark__title">Work with Your Favorite Apps Using whitepace</h2>
         <span class="section--dark__text"
           >Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
         </span>
-        <button class="section--dark__btn">
+        <button class="section--dark__btn col-xl-3">
           Read more<span class="icon-arrow-right"></span>
-        </button>
+        </button></div>
       </div>
 
       <div class="opinions col-4">
@@ -224,47 +240,47 @@
         </div>
       </div>
 
-      <footer class="footer col-4">
-        <h2 class="footer__title">Try Whitepace today</h2>
-        <span class="footer__text mb-2">Get started for free.
-          Add your whole team as your needs grow.</span>
+      <footer class="footer">
+        <h2 class="footer__title col-4 col-sm-6 col-md-6">Try Whitepace today</h2>
+        <div class="footer__text mb-2 col-3 col-sm-5 col-md-6"><span>Get started for free.</span>
+          <span>Add your whole team as your needs grow.</span></div>
         <button
-        class="footer__btn mb-2 col-3 col-sm-3">Try Taskey free<span class="icon-arrow-right"></button>
-        <span class="footer__text mb-2">On a big team? Contact sales</span>
-        <div class="footer__icons col-3">
+        class="footer__btn mb-2 col-3 col-sm-3 col-md-3 col-xl-2">Try Taskey free<span class="icon-arrow-right"></button>
+        <span class="footer__text col-4 col-sm-4 mb-2">On a big team? Contact sales</span>
+        <div class="footer__icons col-3 col-sm-3">
           <span class="icon-apple--white"></span>
           <span class="icon-windows--white"></span>
           <span class="icon-android--white"></span>
-        </div>  
-      <div class="footer__logo">
-        <img class="footer__logo__img" src="./images/icon-logo.png" />
-        <span class="footer__logo__text">whitepace</span>
-      </div>
-        <span class="footer__text-logo col-sm-6">whitepace was created for the new ways we live and work. 
-          We make beautyfully designed around the world</span>
-        <div class="footer__navfooter mb-nav">
+        </div>
+      <div class="footer-box">
+        <div class="footer__logo col-sm-5 col-md-3">
+        <div class="logo-box"><img class="footer__logo__img" src="./images/icon-logo.png" />
+        <span class="footer__logo__text">whitepace</span></div>
+        <span class="footer__text-logo mt col-sm-6">whitepace was created for the new ways we live and work. 
+          We make beautyfully designed around the world</span></div>
+        <div class="footer__navfooter mb-nav col-md-2">
           <a class="footer__navfooter__text--bold mb-1">Product</a>
           <a class="footer__navfooter__text--yellow mb-1">Overview</a>
           <a class="footer__navfooter__text mb-1">Pricing</a>
           <a class="footer__navfooter__text">Customer stories</a>
         </div>
-        <div class="footer__navfooter mb-nav">
+        <div class="footer__navfooter mb-nav col-md-2">
           <a class="footer__navfooter__text--bold mb-1">Resources</a>
           <a class="footer__navfooter__text mb-1">Blog</a>
           <a class="footer__navfooter__text mb-1">Guides & tutorials</a>
           <a class="footer__navfooter__text">Help center</a>
         </div>
-        <div class="footer__navfooter mb-nav">
+        <div class="footer__navfooter mb-nav col-md-2">
           <a class="footer__navfooter__text--bold mb-1">Company</a>
           <a class="footer__navfooter__text mb-1">About us</a>
           <a class="footer__navfooter__text mb-1">Careers</a>
           <a class="footer__navfooter__text">Media kit</a>
         </div>
-        <span class="footer__smalltitle col-sm-3">Try It Today</span>
-        <span class="footer__smalltext col-sm-3">Get started for free.
+        <div class="footer-element col-2 col-md-3"><span class="footer__smalltitle">Try It Today</span>
+        <span class="footer__smalltext">Get started for free.
           Add your whole team as your needs grow.</span>
-        <button class="footer__btn center mb-5 col-sm-3">Start today<span class="icon-arrow-right"></span></button>
-          <div class="footer__information">
+        <button class="footer__btn center col-4">Start today<span class="icon-arrow-right"></span></button></div></div>
+        <div class="box"><div class="footer__information">
             <span class="footer__information__text"><span class="icon-earth--white"></span>English<span class="icon-arrow-down--white"></span></span>
           <a class="footer__information__text">Terms & privacy</a>
           <a class="footer__information__text">Security</a> 
@@ -274,7 +290,7 @@
             <span class="icon-facebook--white"></span> 
             <span class="icon-twitter--white"></span>
             <span class="icon-linkedin--white"></span>
-          </div>
+          </div></div>
         </div>
       </footer>
 
