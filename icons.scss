@@ -66,12 +66,13 @@
 .icon-arrow-down--white:before {
     content: "\e902";
     color: v.$white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-left: 0.375rem;
 }
 
 .icon-arrow-right:before {
     content: "\e903";
+    font-size: 2rem; 
 }
 
 .icon-check-circle:before {
@@ -81,6 +82,11 @@
 .icon-check-circle--yellow:before {
     content: "\e904";
     color: v.$yellow;
+    margin-right: 1.1875rem;
+}
+
+.icon-check-circle--black:before {
+    content: "\e904"; 
     margin-right: 1.1875rem;
 }
 

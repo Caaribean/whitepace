@@ -396,24 +396,15 @@
   }
 }
 
-@mixin boximage {
-  background-color: v.$lightblue;
-  width: 17.875rem;
-  height: 11.9375rem;
-
-  @include sm {
-    width: 34.4375rem;
-    height: 22.9375rem;
-  }
+@mixin empty-img {
+  width: 80%;
 
   @include md {
-    width: 32.875rem;
-    height: 21.875rem;
+    width: 45%;
   }
 
-  @include lg {
-    width: 41.125rem;
-    height: 28.5rem;
+  @include xl {
+    width: 35%;
   }
 }
 
@@ -692,13 +683,13 @@
 
 @mixin footer {
   background-color: v.$navyblue;
-  padding-top: 6.25rem;
+  padding: 6.24rem 1rem 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
   @include sm {
-    padding-top: 8.75rem;
+    padding: 8.75rem 1rem 0;
   }
 }
 
