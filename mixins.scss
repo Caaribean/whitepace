@@ -43,14 +43,21 @@
   padding-bottom: 5rem;
 
   @include sm {
-    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 8.75rem;
+    padding: 1rem 2rem 8.75rem;
+  }
+
+  @include md {
+    padding: 1rem 4rem 8.75rem;
   }
 
   @include lg {
     padding-bottom: 6.25rem;
+  }
+
+  @include xl {
+    padding: 1rem 5rem 6.25rem;
   }
 }
 
@@ -61,10 +68,13 @@
   font-size: 1.125rem;
   line-height: 1.4375rem;
   color: v.$white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin btn-header--yellow {
-  padding: 1rem 2.5rem;
+  padding: 1.1562rem 2.5rem;
   background: v.$yellow;
   border-radius: 0.5rem;
   border: none;
@@ -77,7 +87,7 @@
 }
 
 @mixin btn-header--blue {
-  padding: 1rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   background: v.$blue;
   border-radius: 0.5rem;
   border: none;
@@ -87,6 +97,9 @@
   line-height: 1.4375rem;
   letter-spacing: -0.02em;
   color: v.$white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin logotext {
@@ -390,6 +403,9 @@
   line-height: 1.875rem;
   letter-spacing: -0.02em;
   color: v.$white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include xl {
     padding: 1.25rem;
@@ -404,7 +420,7 @@
   }
 
   @include xl {
-    width: 35%;
+    width: 45%;
   }
 }
 
@@ -751,6 +767,9 @@
   line-height: 1.25rem;
   color: v.$white;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include md {
     margin: 0 auto;
@@ -903,6 +922,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-bottom: 0.0625rem solid v.$darkblue;
+  padding-bottom: 1.25rem;
 
   @include sm {
     display: flex;
@@ -910,6 +931,13 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 2.5rem;
+  }
+
+  @include md {
+    border: none;
+    justify-content: space-between;
+    gap: 3.75rem;
+    margin-bottom: 0;
   }
 }
 
