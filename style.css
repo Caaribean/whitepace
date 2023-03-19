@@ -901,6 +901,13 @@ table {
     padding: 8.75rem 0;
   }
 }
+@media (min-width: 1400px) {
+  .page .section--dark.workwith {
+    padding-right: 13.75rem;
+    padding-left: 13.75rem;
+    gap: 6.25rem;
+  }
+}
 @media (min-width: 1920px) {
   .page .section--dark.workwith {
     background-size: 100%;
@@ -1201,6 +1208,11 @@ table {
   .page .section--light.yourdata {
     margin-top: 8.75rem;
     margin-bottom: 17.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .page .section--light.yourdata {
+    margin: 8.75rem 13.75rem 17.5rem;
   }
 }
 .page .section--light.chooseplan {

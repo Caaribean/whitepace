@@ -244,6 +244,12 @@
         padding: 8.75rem 0;
       }
 
+      @include m.lg {
+        padding-right: 13.75rem;
+        padding-left: 13.75rem; 
+        gap: 6.25rem; 
+      }
+
       @include m.xl {
         background-size: 100%;
       }
@@ -405,7 +411,11 @@
         margin-top: 8.75rem;
         margin-bottom: 17.5rem;
       }
-    }
+ 
+      @include m.lg {
+        margin: 8.75rem 13.75rem 17.5rem;
+      }
+    } 
 
     &.chooseplan {
       margin-bottom: 5.3125rem;
